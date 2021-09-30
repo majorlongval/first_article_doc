@@ -1,0 +1,170 @@
+\begin{thebibliography}{10}
+
+\bibitem{roveda2018high}
+Roveda, L., Pedrocchi, N., Beschi, M., and Tosatti, L.~M., 2018.
+\newblock ``High-accuracy robotized industrial assembly task control schema
+  with force overshoots avoidance''.
+\newblock {\em Control Engineering Practice, {\bf 71}}, pp.~142--153.
+
+\bibitem{meissner2018smart}
+Mei{\ss}ner, D.-W. I.~J., Schmatz, M. S.~F., Beu{\ss}, D.-I.~F., Sender, D.-W.
+  I.~J., Fl{\"u}gge, I.~W., and Gorr, D.-K. F.~E., 2018.
+\newblock ``Smart human-robot-collaboration in mechanical joining processes''.
+\newblock {\em Procedia Manufacturing, {\bf 24}}, pp.~264--270.
+
+\bibitem{raessa2019teaching}
+Raessa, M., S{\'a}nchez, D., Wan, W., Petit, D., and Harada, K., 2019.
+\newblock ``Teaching a robot to use electric tools with regrasp planning''.
+\newblock {\em CAAI Transactions on Intelligence Technology, {\bf 4}}(1),
+  pp.~54--63.
+
+\bibitem{loughlin2007dlr}
+Loughlin, C., Albu-Sch{\"a}ffer, A., Haddadin, S., Ott, C., Stemmer, A.,
+  Wimb{\"o}ck, T., and Hirzinger, G., 2007.
+\newblock ``The dlr lightweight robot: design and control concepts for robots
+  in human environments''.
+\newblock {\em Industrial Robot: an international journal}.
+
+\bibitem{xiaoqing2011mechanical}
+Xiaoqing, G., and Jidong, W., 2011.
+\newblock ``Mechanical design and kinematic analysis of a new kind of
+  palletizing robot''.
+\newblock In 2011 Second International Conference on Mechanic Automation and
+  Control Engineering, IEEE, pp.~404--408.
+
+\bibitem{phantom}
+3d~systems, 2020.
+\newblock Phantom premium.
+\newblock On the WWW, August.
+\newblock URL
+  https://www.3dsystems.com/haptics-devices/3d-systems-phantom-premium.
+
+\bibitem{wen2019kinematically}
+Wen, K., Harton, D., Lalibert{\'e}, T., and Gosselin, C., 2019.
+\newblock ``Kinematically redundant (6+ 3)-dof hybrid parallel robot with large
+  orientational workspace and remotely operated gripper''.
+\newblock In 2019 International Conference on Robotics and Automation (ICRA),
+  IEEE, pp.~1672--1678.
+
+\bibitem{9306904}
+{Wen}, K., {Nguyen}, T.~S., {Harton}, D., {Laliberté}, T., and {Gosselin}, C.,
+  2020.
+\newblock ``A backdrivable kinematically redundant (6+3)-degree-of-freedom
+  hybrid parallel robot for intuitive sensorless physical human–robot
+  interaction''.
+\newblock {\em IEEE Transactions on Robotics}, pp.~1--17.
+
+\bibitem{gosselin2011specification}
+Gosselin, F., Ferlay, F., Bouchigny, S., M{\'e}gard, C., and Taha, F., 2011.
+\newblock ``Specification and design of a new haptic interface for maxillo
+  facial surgery''.
+\newblock In 2011 IEEE International Conference on Robotics and Automation,
+  IEEE, pp.~737--744.
+
+\bibitem{perret2014advantages}
+Perret, J., and Vercruysse, P., 2014.
+\newblock ``Advantages of mechanical backdrivability for medical applications
+  of force control''.
+\newblock In Workshop on Computer/Robot Assisted Surgery (CRAS).
+
+\bibitem{baumann1998haptic}
+Baumann, R., and Clavel, R., 1998.
+\newblock ``Haptic interface for virtual reality based minimally invasive
+  surgery simulation''.
+\newblock In Proceedings. 1998 IEEE International Conference on Robotics and
+  Automation (Cat. No. 98CH36146), Vol.~1, IEEE, pp.~381--386.
+
+\bibitem{carignan2000closed}
+Carignan, C.~R., and Cleary, K.~R., 2000.
+\newblock ``Closed-loop force control for haptic simulation of virtual
+  environments''.
+
+\bibitem{baser2013kinematic}
+Baser, O., and Konukseven, E.~I., 2013.
+\newblock ``Kinematic model calibration of a 7-dof capstan-driven haptic device
+  for pose and force control accuracy improvement''.
+\newblock {\em Proceedings of the Institution of Mechanical Engineers, Part C:
+  Journal of Mechanical Engineering Science, {\bf 227}}(6), pp.~1328--1340.
+
+\bibitem{townsend1988effect}
+Townsend, W.~T., 1988.
+\newblock ``The effect of transmission design on force-controlled manipulator
+  performance''.
+\newblock PhD thesis.
+
+\bibitem{rooks2006harmonious}
+Rooks, B., 2006.
+\newblock ``The harmonious robot''.
+\newblock {\em Industrial Robot: An International Journal, {\bf 33}}(2),
+  pp.~125--130.
+
+\bibitem{phan2014guided}
+Phan, S., Lioulemes, A., Lutterodt, C., Makedon, F., and Metsis, V., 2014.
+\newblock ``Guided physical therapy through the use of the barrett wam robotic
+  arm''.
+\newblock In 2014 IEEE International Symposium on Haptic, Audio and Visual
+  Environments and Games (HAVE) Proceedings, IEEE, pp.~24--28.
+
+\bibitem{lu2015development}
+Lu, Y., Liao, H., Hei, M., Liu, H., and Fan, D., 2015.
+\newblock ``Development of a differential cable drive mechanism for acquiring
+  tracking and pointing application''.
+\newblock {\em Proceedings of the Institution of Mechanical Engineers, Part C:
+  Journal of Mechanical Engineering Science, {\bf 229}}(17), pp.~3191--3200.
+
+\bibitem{lu2012non}
+Lu, Y., and Fan, D., 2012.
+\newblock ``Non-intervene cable wrapping method for precise cable drive''.
+\newblock In 2012 international conference on optoelectronics and
+  microelectronics, IEEE, pp.~378--383.
+
+\bibitem{lu2013transmission}
+Lu, Y., and Fan, D., 2013.
+\newblock ``Transmission backlash of precise cable drive system''.
+\newblock {\em Proceedings of the Institution of Mechanical Engineers, Part C:
+  Journal of Mechanical Engineering Science, {\bf 227}}(10), pp.~2256--2267.
+
+\bibitem{xie2019analytical}
+Xie, X., Qi, C., Zhang, L., and Fan, D., 2019.
+\newblock ``Analytical and experimental research on transmission backlash in
+  precise cable drive for an electro-optical targeting system''.
+\newblock {\em Advances in Mechanical Engineering, {\bf 11}}(7),
+  p.~1687814019866059.
+
+\bibitem{brooks1990telerobotic}
+Brooks, T.~L., 1990.
+\newblock ``Telerobotic response requirements''.
+\newblock In 1990 IEEE International Conference on Systems, Man, and
+  Cybernetics Conference Proceedings, IEEE, pp.~113--120.
+
+\bibitem{gealy2019quasi}
+Gealy, D.~V., McKinley, S., Yi, B., Wu, P., Downey, P.~R., Balke, G., Zhao, A.,
+  Guo, M., Thomasson, R., Sinclair, A., et~al., 2019.
+\newblock ``Quasi-direct drive for low-cost compliant robotic manipulation''.
+\newblock In 2019 International Conference on Robotics and Automation (ICRA),
+  IEEE, pp.~437--443.
+
+\bibitem{baser2010theoretical}
+Baser, O., and Konukseven, E.~I., 2010.
+\newblock ``Theoretical and experimental determination of capstan drive slip
+  error''.
+\newblock {\em Mechanism and Machine Theory, {\bf 45}}(6), pp.~815--827.
+
+\bibitem{gibsonfred}
+Gibson, G.~W.
+\newblock ``Fred hymans and the theory of rope traction, part one''.
+\newblock {\em Elevator World}.
+
+\bibitem{hymans2013neuzeitliche}
+Hymans, F., and Hellborn, A., 2013.
+\newblock {\em Der neuzeitliche Aufzug mit Treibscheibenantrieb:
+  Charakterisierung, Theorie, Normung}.
+\newblock Springer-Verlag.
+
+\bibitem{werkmeister2007theoretical}
+Werkmeister, J., and Slocum, A., 2007.
+\newblock ``Theoretical and experimental determination of capstan drive
+  stiffness''.
+\newblock {\em precision Engineering, {\bf 31}}(1), pp.~55--67.
+
+\end{thebibliography}
