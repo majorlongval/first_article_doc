@@ -150,21 +150,29 @@ Baser, O., and Konukseven, E.~I., 2010.
   error''.
 \newblock {\em Mechanism and Machine Theory, {\bf 45}}(6), pp.~815--827.
 
-\bibitem{gibsonfred}
-Gibson, G.~W.
-\newblock ``Fred hymans and the theory of rope traction, part one''.
-\newblock {\em Elevator World}.
-
-\bibitem{hymans2013neuzeitliche}
+\bibitem{elevator_german}
 Hymans, F., and Hellborn, A., 2013.
 \newblock {\em Der neuzeitliche Aufzug mit Treibscheibenantrieb:
   Charakterisierung, Theorie, Normung}.
 \newblock Springer-Verlag.
+
+\bibitem{elevator}
+Janovsk{\`y}, L., 1999.
+\newblock {\em Elevator mechanical design}.
+\newblock Elevator World Inc.
 
 \bibitem{werkmeister2007theoretical}
 Werkmeister, J., and Slocum, A., 2007.
 \newblock ``Theoretical and experimental determination of capstan drive
   stiffness''.
 \newblock {\em precision Engineering, {\bf 31}}(1), pp.~55--67.
+
+\bibitem{gibsonfred}
+Gibson, G.~W.
+\newblock ``Fred hymans and the theory of rope traction, part two''.
+
+\bibitem{koshaktraction}
+Koshak, J.~W.
+\newblock ``Traction for field personnel, part one''.
 
 \end{thebibliography}

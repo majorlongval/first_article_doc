@@ -1,24 +1,8 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%% asme2ej.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Template for producing ASME-format journal articles using LaTeX    %
-% Written by   Harry H. Cheng, Professor and Director                %
-%              Integration Engineering Laboratory                    %
-%              Department of Mechanical and Aeronautical Engineering %
-%              University of California                              %
-%              Davis, CA 95616                                       %
-%              Tel: (530) 752-5020 (office)                          %
-%                   (530) 752-1028 (lab)                             %
-%              Fax: (530) 752-4158                                   %
-%              Email: hhcheng@ucdavis.edu                            %
-%              WWW:   http://iel.ucdavis.edu/people/cheng.html       %
-%              May 7, 1994                                           %
-% Modified: February 16, 2001 by Harry H. Cheng                      %
-% Modified: January  01, 2003 by Geoffrey R. Shiflett                %
-% Use at your own risk, send complaints to /dev/null                 %
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 %%% use twocolumn and 10pt options with the asme2ej format
-\documentclass[twocolumn,10pt]{asme2ej}
+\documentclass[10pt,cleanfoot]{asme2ej}
 
+%%% Loading packages
+\usepackage{graphicx} %% for loading jpgs
 \usepackage{epsfig} %% for loading postscript figures
 \usepackage{fixltx2e}
 \usepackage{amsmath}
@@ -28,11 +12,28 @@
 \usepackage{booktabs}
 \usepackage{mathtools}
 \usepackage{tabularx}
-\usepackage{graphicx}
-\usepackage{subfig}
+%\usepackage{subfig}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+%\usepackage{helvet}
+\usepackage[hyphens]{url}
+\usepackage[font=small,labelfont=bf,tableposition=top]{caption}
+\usepackage{subcaption}
+
 \graphicspath{ {./images/} }
-\pagenumbering{arabic}
 \newcommand{\hquad}{\hspace{0.5em}}
+\renewcommand{\familydefault}{\sfdefault}
+\pagestyle{fancy}
+\lhead{{\it Insert ASME Journal Title in the Header Here}}
+\rhead{}
+\renewcommand{\headrulewidth}{0pt}
+\topmargin 70 pt
+\headheight 14 pt
+\headsep 30 pt
+
+
+
+\DeclareCaptionLabelFormat{andtable}{#1~#2  \&  \tablename~\thetable}
 %% The class has several options
 %  onecolumn/twocolumn - format for one or two columns per page
 %  10pt/11pt/12pt - use 10, 11, or 12 point font
@@ -61,7 +62,6 @@
    
 
 \begin{document}
-
 \maketitle    
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -78,18 +78,10 @@ Robotic manipulators typically use transmissions with large reduction ratios in 
 Because their transmissions are not backdrivable, most CR used nowadays require force sensors to enable task teaching through pHRI. The force sensors are either placed near the CR's end effector \cite{roveda2018high}\cite{meissner2018smart}\cite{raessa2019teaching} or inside each joint of the CR through the use of strain gauges \cite{loughlin2007dlr}. The use of force/torque sensors limits the bandwidth of the pHRI and makes the interaction less intuitive and agile. 
 \par
 It is possible to teach CR tasks through pHRI without using force sensors. To this end, alternative robot kinematic architectures coupled with backdrivable Low-Ratio Transmissions (LRT) can be used. Alternative robot kinematic architectures can be used to move the CR actuators toward the base in order to minimize the influence of their inertia on the robot dynamics and payload capabilities while allowing larger and stronger actuators with backdrivable transmissions. This concept is already used in industrial palletizing  robots \cite{xiaoqing2011mechanical}, haptic devices \cite{phantom}  and backdrivable pHRI robots \cite{wen2019kinematically}\cite{9306904}. 
-%\begin{figure}[!t]
-%\subfloat[Industrial palletizing robot presented in \cite{xiaoqing2011mechanical}.\label{fig:pall_robot}]{\includegraphics[width=0.4\columnwidth]{alt_robot_arch.png}}
-%\hfill
-%\subfloat[haptic device with a parallelogram architecture \cite{phantom}.\label{fig:hap_device}]{\includegraphics[width=0.5\columnwidth]{phantom.jpg}}
 
-%\subfloat[backdrivable pHRI parallel robot \cite{wen2019kinematically}\cite{9306904}.
-%\label{fig:phri_robot}]{\includegraphics[width=\columnwidth]{proto_keifei.png}}
-%\caption{Palletizing robot, haptic device and backdrivable pHRI robot using alternative parallelogram like architectures.}
-%\label{fig:alt_arch}
-%\end{figure} 
 LRT are already used in haptic devices for telesurgery \cite{gosselin2011specification}\cite{perret2014advantages}\cite{baumann1998haptic}\cite{carignan2000closed}. Yet, not all LRT are mechanically backdrivable. For example, a worm gear cannot be driven by its output (through the worm).Table \ref{tab:LRT} shows a list of backdrivable LRT and indicates their advantages and disadvantages for pHRI.
 \begin{table}[]
+\centering
 \caption{Comparison of different backdrivable LRT.}
 \label{tab:LRT}
 \begin{tabularx}{0.5\textwidth}{@{}XXX@{}}
@@ -111,12 +103,12 @@ Cable (capstan drive) &
 \end{tabularx}
 \end{table}
 \par Table \ref{tab:LRT} shows that a capstan drive is a good choice of backdrivable LRT because it has higher stiffness than a belt drive and it has a low backlash like gears or chain drives. This is why it is used in haptic devices \cite{perret2014advantages}\cite{baser2013kinematic}, highly backdrivable collaborative robots \cite{townsend1988effect}\cite{rooks2006harmonious}\cite{phan2014guided} and high precision targeting systems \cite{lu2015development}\cite{lu2012non}\cite{lu2013transmission}\cite{xie2019analytical}. Having low backlash is very important for  robotics applications which require the robot's motors to work in both directions at a high frequency \cite{brooks1990telerobotic}\cite{gealy2019quasi}. However, Table \ref{tab:LRT} also shows that capstan drives have lower stiffness than other LRT such as gears and can be subject to slip error \cite{lu2013transmission}\cite{baser2010theoretical}.\par
-In order to alleviate these drawbacks, this article presents a novel capstan architecture that increases the stiffness of the transmission by using grooves on the transmission's pulleys. The grooves increase the friction coefficient between the cable and the pulleys, which makes the transmission stiffer. This concept has already been used in cable transmissions for elevators as described in \cite{gibsonfred} and \cite{hymans2013neuzeitliche} Moreover, the novel capstan drive allows multiple cable arrangements, which further increases the stiffness of the transmission.\par This paper is structured as follows. In Section II and III, the general modelling of a capstan drive and its torsional stiffness are recalled. The theoretical model used here is based on the work of Werkmeister et al.\cite{werkmeister2007theoretical}. Part of this model is also used in \cite{baser2010theoretical}. Section IV explains how grooves etched along the surface of a capstan drive's pulleys can theoretically increase the friction coefficient between the drive's cable and its pulleys thus increasing the overall stiffness of the capstan drive. The use of grooves in capstan drives has already been presented in \cite{lu2012non}. However, this paper presents a novel design for the output pulley of a capstan drive which uses grooves arranged as a multiple helix. This novel design enables different multi-cable arrangements of the capstan drive that can theoretically further increase its torsional stiffness. The novel capstan drive architecture as well as different possible cable arrangements are presented in Section V. The advantages and disadvantages  of each of the proposed arrangements are discussed. Section VI then proposes a method to properly arrange the capstan drive's pulleys during the drive's assembly so that the cables can follow a smooth and continuous path while passing from one pulley to the other. Finally, concluding remarks are made in Section VIII.
+In order to alleviate these drawbacks, this article presents a novel capstan architecture that increases the stiffness of the transmission by using grooves on the transmission's pulleys. The grooves increase the friction coefficient between the cable and the pulleys, which makes the transmission stiffer. This concept has already been used in cable transmissions for elevators as described in \cite{elevator_german} and \cite{elevator} Moreover, the novel capstan drive allows multiple cable arrangements, which further increases the stiffness of the transmission.\par This paper is structured as follows. In Section 2 and 3, the general modelling of a capstan drive and its torsional stiffness are recalled. The theoretical model used here is based on the work of Werkmeister et al.\cite{werkmeister2007theoretical}. Part of this model is also used in \cite{baser2010theoretical}. Section 4 discusses the fact that grooves etched along the surface of a capstan drive's pulleys can theoretically increase the friction coefficient between the drive's cable and its pulleys thus increasing the overall stiffness of the capstan drive. This effect has been discussed in different reference books such as \cite{elevator_german} and \cite{elevator}. The result of an experiment which proves this effect is also presented in  section 4. The use of grooves in capstan drives has already been presented in \cite{lu2012non}. However, this paper presents a novel design for the output pulley of a capstan drive which uses grooves arranged as a multiple helix. The novel design enables different multi-cable arrangements of the capstan drive that can theoretically further increase its torsional stiffness. The novel capstan drive architecture as well as different possible cable arrangements are presented in Section 5. The advantages and disadvantages  of each of the proposed arrangements are discussed. Section 6 then proposes a method to properly arrange the capstan drive's pulleys during the drive's assembly so that the cables can follow a smooth and continuous path while passing from one pulley to the other while avoiding cable interference. Section 8 presents the results of an experiment conducted to show how a groove can effectively  Finally, concluding remarks are made in Section VIII.
 \section{Modelling of a capstan drive}
 Figure \ref{fig:model_capstan} presents the different elements of the capstan drive model.
 \begin{figure}
     \centering
-    \includegraphics[width=0.46\textwidth]{modelling_of_capstan_drive.eps}
+    \includegraphics[width=0.5\textwidth]{modelling_of_capstan_drive.eps}
     \caption{Modelling of a capstan drive.}
     \label{fig:model_capstan}
 \end{figure}
@@ -134,7 +126,7 @@ T_\ell = \frac{\tau_i}{2r_1}.
 The tension variations in the cable occur in contact regions between the cable and the pulleys called the slip regions. These regions are represented in figure \ref{fig:model_capstan} with the angles $\theta_{s1}$ to $\theta_{s4}$. Along these slip regions, the cable elongates or shortens due to the applied torque. This local variation in length causes friction between the pulleys and the cable. Figure \ref{fig:friction_fig} illustrates this principle. 
 \begin{figure}
     \centering
-    \includegraphics[width = 0.43\textwidth]{capstan_equation.eps}
+    \includegraphics[width = 0.5\textwidth]{capstan_equation.eps}
     \caption{Small segment of the cable pulley interaction.}
     \label{fig:friction_fig}
 \end{figure}
@@ -244,237 +236,232 @@ where $\delta_{f1}$ and $\delta_{f2}$ are the deformations on the tight and slac
 The following section shows how placing the capstan transmission's cable into grooves helps to increase the coefficient of friction between the cable and the pulleys and therefore the transmission's stiffness.
 
 \section{Influence of grooves on the capstan drive stiffness}
- Analyzing the equations for the stiffness of the different cable sections of a capstan drive ((32) to (35)), one can clearly see that all the stiffness terms are proportional to the coefficient of friction. Therefore, Increasing the coefficient of friction between the cable and the pulleys is an effective way to increase the overall stiffness of the transmission. Typically, the coefficient of friction is a property that is only dependant on the nature of the materials at the friction interface. However, like for a v-belt drive, by changing the geometry of the interface between two surfaces, it is possible to change the apparent coefficient of friction. Figure \ref{fig:distib_force} illustrates how circular grooves help to increase the coefficient of friction between the cable and the capstan drive pulleys.\\
- \begin{figure}
-    \centering
-    %\subfloat[Uniform distribution.\label{fig:uniform_force}]{\includegraphics[width =0.8\columnwidth]{distribution_de_force_cable.eps}}\\    
-    %\subfloat[General distribution.\label{fig:general_force}]
-    \includegraphics[width =0.8\columnwidth]{distribution_tension_gen.eps}
-    \caption{Distribution of the normal force along the cross-section interface between the cable and the pulleys.}
-    \label{fig:distib_force}
+ Analyzing the equations for the stiffness of the different cable sections of a capstan drive ((24) to (28)), one can clearly see that most of the stiffness terms are proportional to the coefficient of friction. Therefore, Increasing the coefficient of friction between the cable and the pulleys is an effective way to increase the overall stiffness of the transmission. Typically, the coefficient of friction is a property that is only dependant on the nature of the materials at the friction interface. However, like for a v-belt drive, by changing the geometry of the interface between two surfaces, it is possible to change the apparent coefficient of friction. The way a circular groove interacts with a cable to increase the apparent coefficient of friction has been studied many times as grooves are often used in elevator mechanical design \cite{elevator_german}\cite{elevator}\cite{gibsonfred}\cite{koshaktraction}. According to the afformentioned references, the apparent coefficient of friction $\mu'$ for a circular groove is written as 
+ \begin{align}
+\mu' = \frac{4}{\pi}\mu, 
+ \end{align}
+where $\mu$ is the static coefficient of friction between the cable and a flat surface of the same material as the groove. This means that the use of grooves theoretically increases the friction between the cable and the groove by roughly 27.3 \%.
+\par
+To prove this concept, a small experimental setup was made. The experimental setup is shown in figures \ref{fig:exp_A} and \ref{fig:exp_B}. 
+\begin{figure}
+\centering
+\includegraphics[width=0.5\textwidth]{experimental_setup.eps}
+\caption{Explicative illustration of the experimental setup.}
+\label{fig:exp_A}
 \end{figure}
- The illustrations in figure \ref{fig:distib_force} show the distribution of the normal force occurring between a small section of the cable and a pulley groove. In figure \ref{fig:distib_force}, the distribution of the normal force is considered to proportional to the sin of the angle $\phi$. This normal force distribution makes it so that the normal force at the bottom of the groove is maximum while the normal force at the sides of the  The figure shows the cross section of the interface which is perpendicular to the plane shown in figure \ref{fig:friction_fig}. The equivalent normal force between the small cable segment and the pulley segment is noted $dN$ and can be mathematically obtained as 
- \begin{align}
-     dN = \int_0^\pi \delta f\sin{\phi}d\phi = 2\delta f,
-     \label{eq:small_normforce}
- \end{align}
- where $\phi$ is the variable angle along the interface cross section and $\delta f$ is a unit force quantity. Applying Coulomb's law of static friction to the cross-section in figure \ref{fig:uniform_force} gives 
- \begin{align}
-     dF_f = \int_0^\pi\mu df d\theta=\pi\mu df, \label{eq:small_friction}
- \end{align}
- where $dF_f$ is the friction force between the cable segment and the cable pulley. Combining  \eqref{eq:small_normforce} and \eqref{eq:small_friction} gives
- \begin{align}
-     dF_f=\mu'dN=\frac{\pi\mu}{2}dN,\label{eq:eff_fric}
- \end{align}
- where $\mu'$ is the effective coefficient of friction between the cable and the pulley grooves. Equation \eqref{eq:eff_fric} shows that, when considering a uniform distribution along the cross section of the cable pulley interface, grooves can help to increase the effective friction coefficient by a factor of $\pi/2$. However, this force distribution along the interface arc is very unlikely considering the fact that local normal force around the middle of the cross-section arc is likely larger than the one at each extremity of the cross-section arc. Considering this, figure \ref{fig:general_force} shows how the force could be distributed along the cross-section arc if a general force distribution function $g(\phi)$ is considered. The effective friction coefficient given this consideration is then obtained by
- \begin{align}
-     dN = \delta f I_1(\phi) = \delta f\int_0^{\pi}g(\phi)\sin\phi d\phi,\\
-     dF_f = \mu\delta f I_2(\phi) = \mu\delta_f\int_0^\pi\mu g(\phi)d\phi.\\
-     dF_f =\mu'dN= \frac{\mu I_2(\phi)}{I_1(\phi)}dN.
- \end{align}
- For any type of positive distribution function $g(\phi)$, the ratio of $\frac{I_2(\phi)}{I_1(\phi)}$ will always be greater than 1. This means that a groove can only increase the effective friction coefficient between the cable and the pulleys of a capstan drive and will therefore make it stiffer. 
+In this setup, a pulley is connected to a motor which is controlled to spin at a constant speed. a rope is passed around the top half of the pulley with one end of the rope attached to a very heavy mass (immovable) and the other end of the rope attached to a basket. The cable slips on the pulley as the number of turns around the pulley (1/2) is insufficient to create traction. As more and more mass is added to the basket, the friction between the cable and the pulley increases. Therefore, a larger torque $\tau_m$ is required at the motor in order to maintain a constant speed. When the motor spins at constant speed, the torque required is equal to the total friction torque (if the internal friction torque of the motor is neglected). The total friction torque $\tau_f$, for this setup, is written as 
+\begin{align}
+\tau_f = r\mu_k\int_0^\pi dN(\theta),
+\label{int_exp}
+\end{align}where $r$ is the radius of the experimental pulley, $\mu_k$ is the kinetic friction coefficient, $dN(\theta)$ is the equivalent normal force between the cable and the pulley at the angle $\theta$ around the wrapping area. Using equations \eqref{eq:sum_f_y} and \eqref{eq:tens_decrease}, the integration in equation \eqref{int_exp} can be rewritten as 
+\begin{align}
+\tau_f = r\mu_k\int_0^\pi dN(\theta) = r\mu_kT_1\int_0^\pi e^{-\mu_k\theta}d\theta = r\mu_kmg\int_0^\pi e^{-\mu_k\theta}d\theta = rmg\left(1-e^{\mu_k\pi}\right).
+\end{align}
+In order to have constant speed, one must have $\tau_f = \tau_m$ which means that $\mu_k$ can be calculated as a function of the mass of the basket $m$ and the motor torque $\tau_m$ with the following equation
+\begin{align}
+\mu_k = \frac{1}{\pi}\ln\left({\frac{rmg}{rmg-\tau_m}}\right).
+\end{align}
+It is important to explicit that the coefficient of friction $\mu_k$ is the kinetic coefficient of friction and not the static coefficient of friction. However, it is a generaly accepted fact that the kinetic coefficient is always less than the static coefficient of friction meaning that an increase of the kinetic friction coefficient means an increase in the static friction coefficient. 
+\par 
+In the experimental setup, two pulleys of radius $r=0.03$ m were tested, one with no groove and one with a groove of same radius as the cable in order to have a full half circled groove. The motor was spun at a comstant speed of 100 RPM while the motor torque was recorded continously. The mass of the basket was increased incrementally from no added mass to 900 grams of added mass (the basket having a mass of 27.6 g). The average motor torque for every mass increment was also recorded. The experiment results are presented in Table 2 and in figure 4.
+\begin{figure}
+\centering
+\includegraphics[width=0.47\textwidth]{fig_exp.eps}
+\qquad
+\begin{tabular}[b]{cccc}\hline
+      Mass [g] & $\mu_{k1}$:no groove & $\mu_{k2}$:simple & $\eta=\mu_{k2}/\mu_{k1}$\\ \hline
+      127.6 & 0.38 & 0.62 & 1.64\\
+      327.6 & 0.15 & 0.22 & 1.43\\
+      527.6 & 0.12 & 0.18 & 1.50\\
+      727.6 & 0.10 & 0.15 & 1.47\\
+      927.6 & 0.09 & 0.13 & 1.53\\ \hline
+      
+    \end{tabular}
+    \label{tab:exp_tab}
+    \captionlistentry[table]{Results of the experience.}
+    \captionsetup{labelformat=andtable}
+    \caption{Experimental results.}
+\end{figure}
+\par
+As can be seen in the experimental results, the increase in the coefficient of friction when passing from no groove to a simple half circle groove is even more than what the theory predicts as the average increase is of $1.51$ times the no groove coefficient of friction. This shows that the use of grooves is indeed a good way to easily increase the coefficient of friction between the cables and the pulleys of and thus increase the total stiffness of a capstan drive.
 \\ 
  The following section presents a novel capstan drive architecture that takes advantage of the increased effective friction coefficient of grooved pulleys and uses multiple grooves on its output pulley in order to allow different cable arrangements which further increase the stiffness of the drive.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Second-Level Heading}
-
-The next level of heading is also boldface with upper and lower case letters. 
-The heading is flushed left with the left margin. The spacing to the next heading is two line spaces.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsubsection{Third-Level Heading.}
-
-The third-level of heading follows the style of the second-level heading.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Use of SI Units}
-
-An ASME paper should use SI units.  When preference is given to SI units, the U.S. customary units may be given in parentheses or omitted. When U.S. customary units are given preference, the SI equivalent {\em shall} be provided in parentheses or in a supplementary table. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Footnotes\protect\footnotemark}
-\footnotetext{Examine the input file, asme2ej.tex, to see how a footnote is given in a head.}
-
-Footnotes are referenced with superscript numerals and are numbered consecutively from 1 to the end of the paper\footnote{Avoid footnotes if at all possible.}. Footnotes should appear at the bottom of the column in which they are referenced.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Mathematics}
-
-Equations should be numbered consecutively beginning with (1) to the end of the paper, including any appendices.  The number should be enclosed in parentheses and set flush right in the column on the same line as the equation.  An extra line of space should be left above and below a displayed equation or formula. \LaTeX\ can automatically keep track of equation numbers in the paper and format almost any equation imaginable. An example is shown in Eqn.~(\ref{eq_ASME}). The number of a referenced equation in the text should be preceded by Eqn.\ unless the reference starts a sentence in which case Eqn.\ should be expanded to Equation.
-
-\begin{equation}
-f(t) = \int_{0_+}^t F(t) dt + \frac{d g(t)}{d t}
-\label{eq_ASME}
-\end{equation}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Figures}
-\label{sect_figure}
-
-All figures should be positioned at the top of the page where possible.  All figures should be numbered consecutively and centered under the figure as shown in Fig.~\ref{figure_ASME}. All text within the figure should be no smaller than 7~pt. There should be a minimum two line spaces between figures and text. The number of a referenced figure or table in the text should be preceded by Fig.\ or Tab.\ respectively unless the reference starts a sentence in which case Fig.\ or Tab.\ should be expanded to Figure or Table.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%% begin figure %%%%%%%%%%%%%%%%%%%
-\begin{figure}[t]
-\begin{center}
-\setlength{\unitlength}{0.012500in}%
-\begin{picture}(115,35)(255,545)
-\thicklines
-\put(255,545){\framebox(115,35){}}
-\put(275,560){Beautiful Figure}
-\end{picture}
-\end{center}
-\caption{The caption of a single sentence does not have period at the end}
-\label{figure_ASME} 
-\end{figure}
-%%%%%%%%%%%%%%%% end figure %%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-In the following subsections, I have inserted figures that have been provided by authors in order to demonstrate what to avoid.  In each case the authors provided figures that are 3.25in wide and 600dpi in the .tif graphics format.  The papers containing these figures have been held from production due to their poor quality. 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The 1st Example of Bad Figure}
-
-%%%%%%%%%%%%%%%% begin figure %%%%%%%%%%%%%%%%%%%
-%%% 3.34in is the maximum width you can have for a figure
-\begin{figure} 
-\centerline{\psfig{figure=figure/FMANU_MD_05_1107_11.ps,width=3.34in}}
-\caption{Example taken from a paper that was held from production because the image quality is poor.  ASME sets figures captions in 8pt, Helvetica Bold.}
-\label{fig_example1.ps}
-\end{figure}
-%%%%%%%%%%%%%%%% end figure %%%%%%%%%%%%%%%%%%%
-
-In order to place the figure in this template using MSWord, select Insert Picture from File,and use wrapping that is  top and bottom.  Make sure the figure is 3.25in wide.
- 
-Figure~`\ref{fig_example1.ps}
-was taken from a recent paper that was held from publication, because the text is fuzzy and unreadable.  It was probably obtained by taking a screen shot of the computer output of the authors software.  This means the original figure was 72dpi (dots per inch) on a computer screen.  There is no way to improve the quality such a low resolution figure.
- 
-In order to understand how poor the quality of this figure is, please zoom in slightly, say to 200\%.  Notice that while the font of the paper is clear at this size, the font in the figures is fuzzy and blurred.  It is impossible to make out the small symbol beside the numbers along the abscissa of the graph.  Now consider the labels Time and Cost.  They are clearly in fonts larger that the text of the article, yet the pixilation or rasterization, associated with low resolution is obvious. This figure must be regenerated at higher resolution to ensure quality presentation.
-
-The poor quality of this figure is immediately obvious on the printed page, and reduces the impact of the research contribution of the paper, and in fact detracts from the perceived quality of the journal itself.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The 2nd Example of Bad Figure}
-
-%%%%%%%%%%%%%%%% begin figure %%%%%%%%%%%%%%%%%%%
-\begin{figure} 
-\centerline{\psfig{figure=figure/FMANU_MD_05_1272_5.ps,width=3.34in}}
-\caption{While this figures is easily readable at a double column width of 6.5in, when it is shrunk to 3.25in column width the text is unreadable.   This paper was held from production.}
-\label{fig_example2.ps}
-\end{figure}
-%%%%%%%%%%%%%%%% end figure %%%%%%%%%%%%%%%%%%%
-
-Figure~\ref{fig_example2.ps}
-demonstrates a common problem that arises when a figure is scaled down fit a single column width of 3.25in.  The original figure had labels that were readable at full size, but become unreadable when scaled to half size.  This figure also suffers from poor resolution as is seen in the jagged lines the ovals that form the chain.
-
-This problem can be addressed by increasing the size of the figure to a double column width of 6.5in, so the text is readable.  But this will not improve the line pixilation, and a large low resolution figure is less desirable than a small one.  This also significantly expands the length of the paper, and may cause it to exceed the JMD nine page limit.  Additional pages require page charges of \$200 per page.  It is best to regenerate the figure at the resolution that ensures a quality presentation.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{The 3rd Example of Bad Figure}
-%%%%%%%%%%%%%%%% begin figure %%%%%%%%%%%%%%%%%%%
-\begin{figure} 
-%\centerline{\psfig{figure=figure/FMANU_MD_04_1274_13.ps,width=3.34in}}
-\centerline{\psfig{figure=figure/FMANU_MD_04_1274_13.ps,width=3.25in}}
-\caption{Another example of a figure with unreadable text.  Even when the paper was expanded to double column width the text as shown in Fig.~\ref{fig_example4.ps} was of such low quality that the paper was held from production.}
-\label{fig_example3.ps}
-\end{figure}
-%%%%%%%%%%%%%%%% end figure %%%%%%%%%%%%%%%%%%%
-
-%%%%%%%%%%%%%%%% begin figure %%%%%%%%%%%%%%%%%%%
-%%% the maximum width in double column is 6.85in
-\begin{figure*} 
-\centerline{\psfig{figure=figure/FMANU_MD_04_1274_13.ps,width=6.85in}}
-\caption{A figure expanded to double column width the text from Figure~\ref{fig_example3.ps}}
-\label{fig_example4.ps}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \section{Novel capstan drive architecture}
+ The novel architecture is presented in figure \ref{fig:novel_arch}. The novel capstan drive is composed of two pulleys, the input pulley of radius $r_1$ which is connected to the motor and the output pulley of radius $r_2$ which is connected to the output of the drive.  A cable indicated by a red line goes from the output pulley to the input pulley and back to the output pulley. Points $P_1$ and $P_2$ are anchoring points where the cable is fixed. The grooves on each pulley have identical cross sections. However, the groove on the input pulley forms a single helix with a pitch of $H_1$ while the grooves on the output pulley form a R-helix where $R$ is the reduction ratio of the drive, i.e. $r_2/r_1$. In figure \ref{fig:novel_arch}, the grooves on the output pulley are each indicated with a different colour to help differentiate them. Each of the output grooves has a pitch of $H_2$, where $H_2 = RH_1$.
+ \begin{figure}
+     \centering
+     \includegraphics[width =0.3\columnwidth]{test_print_poulies.eps}
+     \caption{Architecture of the novel capstan drive.}
+     \label{fig:novel_arch}
+ \end{figure}
+ The grooves of the output pulley evolve in a direction opposite that of the grooves of the input pulley. The free cable length $L_f$ indicates the part of the cable that is not in direct contact with either of the drive pulleys. The distance between the centre axes of the pulleys is noted $D$. \\
+ The presence of grooves on both the input and the output pulleys helps to increase the stiffness of the drive by increasing the effective coefficient of friction between the cable and the pulleys, as mentioned in the preceding section. Furthermore, the multiple grooves present on the output pulley enable the use of multiple cables in different cable arrangements, which can further increase the stiffness of the drive.\\
+Figure \ref{fig:cable_arrangements} illustrates the different possible cable arrangements. 
+ \begin{figure*}
+    \centering
+    \subfloat[One cable fixed at both ends to the output pulley.\label{fig:single_cable_multi_loops}]
+    {\includegraphics[width =0.2\columnwidth]{only_one_cable_multi_loops.eps}}\hspace{0.1\textwidth}
+    \subfloat[Two cables both fixed at both ends to the output pulley.\label{fig:2cables_multi_loops}]{\includegraphics[width=0.2\columnwidth]{two_cables_multi_loops.eps}}
+    
+    \subfloat[Two cables with ends fixed at the input pulley and the output pulley.\label{fig:multi_cables_full_loops}]{\includegraphics[width=0.2\columnwidth]{two_cables_all_loops.eps}}\hspace{0.1\textwidth}
+    \subfloat[Three cables, two having ends fixed at the input and output pulley and one being fixed at both ends to the output pulley.\label{fig:three_cables_multi_loops}]{\includegraphics[width=0.2\columnwidth]{three_cables_multi_loops.eps}}
+    \caption{Different possible cable arrangements.}
+    \label{fig:cable_arrangements}
 \end{figure*}
-%%%%%%%%%%%%%%%% end figure %%%%%%%%%%%%%%%%%%%
-An author provided the high resolution image 
-in Fig.~\ref{fig_example3.ps}
-that was sized to a single column width of 3.25in.  Upon seeing the poor quality of the text, the publisher scaled the image to double column width as shown in Fig.~\ref{fig_example4.ps} 
-at which point it took half of a page.  The publisher went on to do this for all eight figures generating four pages of figures that the author did not expect. ASME stopped production of the paper even with the larger figures due to the pixilation of the font.
+In figure \ref{fig:single_cable_multi_loops}, a single cable is used which is fixed at both ends to the output pulley. This arrangement has the advantage of being simple and its stiffness model is equivalent to the stiffness model of a typical capstan drive such as the one presented in figure \ref{fig:model_capstan}. This arrangement can be used many times in parallel as shown in figure \ref{fig:2cables_multi_loops} in order to multiply the total stiffness of the transmission. However, since none of the cables are fixed to the input pulley, slipping of the input pulley is possible.\\
+The layout shown in figure \ref{fig:multi_cables_full_loops} uses two cables. Each cable is fixed to the input pulley at one end and to the output pulley at the other end. This cable arrangement has the advantage of ensuring that the input pulley does not slip. However, it requires two cables to obtain a transmission stiffness which is equivalent to the transmission stiffness of a single cable arrangement in figure \ref{fig:single_cable_multi_loops}.\\
+The layout shown in figure  \ref{fig:three_cables_multi_loops} uses three cables. Two of its cables are fixed to both the input and output pulley while its third cable is strictly fixed to the output pulley but loops over the input pulley. The first two cables ensure the motion coupling of the input and output pulley (that there is no slipping) while the third cable helps to increase the transmission stiffness. This cable arrangement has the advantages of the two previous arrangements. \\
+In all the cable arrangements shown in figure \ref{fig:cable_arrangements}, the number of turns that can be made by the output pulley is given by 
+\begin{align}
+N = \frac{d-a}{H_1R},
+\end{align}
+where  $d$ and $a$ are defined in figure \ref{fig:cable_arrangements}, $H_1$ is the pitch of the groove on the input pulley and $R$ is the reduction ratio of the drive.
+In order for the cables to pass from the input pulley to the output pulley and vice versa, geometric conditions must be met in order to ensure that the helical path described by the input groove aligns with one of the helical paths of the output pulley grooves. The following section presents a mathematical model that ensures proper alignment.
+\section{Alignment of the input and output grooves}
+ The groove on the input pulley can best be described as a helix. The parametric helix function of the groove on the input pulley is given by 
+ \begin{align}
+     \mathbf{p}_1(t_1) = \begin{bmatrix}
+     r_1\cos t_1\\-r_1\sin t_1\\\frac{H_1t_1}{2\pi}
+     \end{bmatrix}
+     \label{eq:helix_1nput}
+ \end{align}
+  with respect to the reference frame of the input pulley $\mathcal{O}_1$. The $X_1$ axis of $\mathcal{O}_1$ points towards the starting point of the helix. In \eqref{eq:helix_1nput},
+ $t_1$ is the helix parameter of the trajectory. The second term of $\mathbf{p}_1(t_1)$ has a negative sign since the helix on the input pulley evolves in a direction opposite to the reference frame $\mathcal{O}_1$. Differentiating $\mathbf{p}_1(t_1)$ with respect to $t_1$ gives a vector that is tangent to $\mathbf{p}_1(t_1)$ and which can be written as
+ \begin{align}
+     \mathbf{q}_1(t_1) = \frac{d\mathbf{p}_1(t_1)}{dt_1} = \begin{bmatrix}
+     -r_1\sin t_1\\-r_1\cos t_1\\\frac{H_1}{2\pi}
+     \end{bmatrix} 
+ \end{align}
+ The unit vector $\mathbf{u}_1(t_1)$ along $\mathbf{q}_1(t_1)$ is obtained by dividing $\mathbf{q}_1(t_1)$ by its Euclidean norm which gives
+ \begin{align}
+     \mathbf{u}_1(t_1) = \frac{\mathbf{q}_1(t_1)}{\rho_1}, \hquad \rho_1 = \frac{\sqrt{H_1^2+4\pi^2r_1^2}}{2\pi}.
+ \end{align}
+  The grooves on the output pulley can also be described by parametric helix functions. These functions can be written as
+  \begin{align}
+      \mathbf{p}_{2i}(t_{2i}) = \begin{bmatrix}
+      r_2\cos t_{2i}\\
+      r_2\sin t_{2i}\\
+      \frac{H_2 t_{2i}}{2\pi}
+      \end{bmatrix},\\ t_{2i} = t_2+\frac{(i-1)}{R}2\pi, \hquad i =1 ,\ldots , R,
+      \label{eq:output_helix}
+  \end{align}
+  with respect to the reference frame of the output pulley $\mathcal{O}_2$. The $X_2$ axis points towards the starting point of one of the output grooves. In \eqref{eq:output_helix}, $t_2$ is the general helix parameter of the output pulley and the $t_{2i}$ parameters are specific to each individual groove of the output pulley. \\ 
+  Differentiating vectors $\mathbf{p}_{2i}(t_{2i})$ with respect to $t_{2}$ gives vectors that are tangent to their respective $\mathbf{p}_{2i}(t_{2i})$ vectors. These tangent vectors can be written as 
+  \begin{align}
+      \mathbf{q}_{2i}(t_{2i}) = \frac{d \mathbf{p}_{2i}(t_{2i})}{dt_{2}}=\begin{bmatrix}
+      -r_2\sin t_{2i}\\
+      r_2\cos t_{2i}\\
+      \frac{H_2}{2\pi}
+      \end{bmatrix},\hspace{0.5em}i =1 ,\ldots , R.
+  \end{align}
+  The tangent unit vectors along the $\mathbf{q}_{2i}(t_{2i})$ vectors are given by
+  \begin{align}
+      \mathbf{u}_{2i}(t_{2i}) = \frac{\mathbf{q}_{2i}}{\rho_2},\hspace{0.5em} \rho_2 = \frac{\sqrt{H_2^2+4\pi^2r_2^2}}{2\pi}, \hspace{0.5em} i = 1 ,\ldots , R.
+  \end{align}
+  The helix functions of the input pulley groove and one of the output pulley grooves can be expressed as a function of one another in the following loop closure equation
+  \begin{align}
+      \mathbf{p}_1 + L_f\mathbf{u}_1 = \mathbf{a}+\mathbf{Q}\mathbf{p}_{2i}, \hquad i =1 ,\ldots , R,
+      \label{eq:loop_closure}
+  \end{align}
+  where $\mathbf{a}=\begin{bmatrix}0 && -D  && 0\end{bmatrix}^T$ is a vector expressed in the $\mathcal{O}_1$ reference frame and $\mathbf{Q}$ is a rotation matrix expressing a change of reference frame from $\mathcal{O}_2$ to $\mathcal{O}_1$ and is written as \begin{align}
+  \mathbf{Q} =
+  \begin{bmatrix}
+  \cos \omega && -\sin \omega && 0\\
+  \sin \omega && \cos \omega && 0\\
+  0 && 0 && 1
+  \end{bmatrix},
+  \end{align}
+  where $\omega$ represents the amount of rotation of the output pulley needed in order to have the cables pass smoothly between the two pulleys.
+  Equation \eqref{eq:loop_closure} is equivalent to the three following scalar equations
+  \begin{equation}
+  \begin{multlined}
+      r_1\left(\cos t_1 -\frac{L_f}{\rho_1}\sin t_1\right)=r_2\cos\left(\omega+t_{2i}\right),\\ i=1 ,\ldots , R,\label{eq:loop_closure_deriv1}
+      \end{multlined}
+      \end{equation}
+      \begin{align}
+      \begin{multlined}
+      -r_1\left(\sin t_1 + \frac{L_f}{\rho_1}\cos t_1\right)=-D+r_2\sin\left(\omega+t_{2i}\right),\\ i=1 ,\ldots , R,\label{eq:loop_closure_deriv2}
+      \end{multlined}
+      \end{align}
+      \begin{equation}
+      H_1\left(t_1+\frac{L_f}{\rho_1}\right) = H_2t_2.\label{eq:loop_closure_deriv3}
+  \end{equation}
+  In addition to these equations, in order to ensure the proper alignment of the input and output pulley grooves, one must be able to draw a straight line from the input groove to one of the output grooves where the line is tangent to both grooves. This can be mathematically written as 
+  \begin{align}
+      \mathbf{q}_1 \times \mathbf{Q}\mathbf{q}_{2i} = \mathbf{0},\hquad i=1 ,\ldots , R,
+  \end{align}
+  which is equivalent to the following three scalar equations 
+  \begin{align}
+      \frac{H_2r_1}{2\pi}\cos t_1 + \frac{H_1r_2}{2\pi}\cos(\omega+t_{2i})=0,\hquad i=1 ,\ldots , R,\label{eq:cross_prod_1}\\
+      \frac{H_2r_1}{2\pi}\sin t_1-\frac{H_1r_2}{2\pi}\sin(\omega + t_{2i})=0,\hquad i=1 ,\ldots , R,\label{eq:cross_prod_2}\\
+      \sin\left(t_1+t_{2i}+\omega\right)=0,\hquad i=1 ,\ldots , R.\label{eq:cross_prod_3}
+  \end{align}
+From \eqref{eq:cross_prod_3}, we obtain that
+\begin{align}
+    t_1+t_{2i}+\omega = n\pi, n\in \mathbb{N},\hquad i = 1,\ldots ,R.\label{eq:cross_prod_deriv1}
+\end{align}
+Substituting \eqref{eq:cross_prod_deriv1} into \eqref{eq:cross_prod_1} and \eqref{eq:cross_prod_2} yields
+\begin{align}
+    \frac{H_2r_1}{2\pi}\cos t_1 + \frac{H_1r_2}{2\pi}\cos(n\pi-t_1)=0,\hquad i=1,\ldots ,R,\label{eq:cross_prod_deriv2}\\
+    \frac{H_2r_1}{2\pi}\sin t_1-\frac{H_1r_2}{2\pi}\sin( n\pi-t_1)=0,\label{eq:cross_prod_deriv3}\hquad i=1 ,\ldots , R.
+\end{align}
+Equations \eqref{eq:cross_prod_deriv2} and \eqref{eq:cross_prod_deriv3} are both satisfied if 
+\begin{align}
+    H_2r_1 = H_1r_2\label{eq:cond_cross_prod_2}
+\end{align} 
+and 
+\begin{align}
+    n = 2m+1, \hquad m \in \mathbb{N}.\label{eq:cond_cross_prod_3}
+\end{align}
+Equations \eqref{eq:cross_prod_deriv1}, \eqref{eq:cond_cross_prod_2} and \eqref{eq:cond_cross_prod_3} represent the conditions that must be met in order to be able to draw a straight line from the input pulley groove to one of the output pulley grooves where the line is tangent to both grooves. Substituting these conditions into \eqref{eq:loop_closure_deriv1} and \eqref{eq:loop_closure_deriv3} leads to
+\begin{align}
+    (r_2+r_1)\cos t_1 = \frac{L_fr_1}{\rho_1}\sin t_1,\label{eq:loop_closure_deriv4}\\
+    D - \left(r_2+r_1\right)\sin t_1 = \frac{L_fr_1}{\rho_1}\cos t_1.\label{eq:loop_closure_deriv5}
+\end{align}
+Dividing  \eqref{eq:loop_closure_deriv4} by \eqref{eq:loop_closure_deriv5} and rearranging then yields
+\begin{align}
+   \sin t_1 = \left(\frac{r_2+r_1}{D}\right).\label{eq:deriv_eq_tI}
+\end{align}
+The right-hand side term in \eqref{eq:deriv_eq_tI} is bound between 0 and 1 since $D\in\left[(r_2+r_1),\infty \right[$. This means that 
+\begin{align}
+    t_1 =  \varphi + 2\pi p,\hquad p \in \mathbb{N}\label{eq:deriv_eq_tI2}
+\end{align}
+or 
+\begin{align}
+    t_1 =(2p+1)\pi-\varphi,\hquad p \in \mathbb{N},\label{eq:deriv_eq_tI3}\\
+    \varphi = \sin^{-1}\left(\frac{r_1+r_2}{D}\right).
+\end{align}
+Substituting \eqref{eq:deriv_eq_tI3} into \eqref{eq:loop_closure_deriv4}, one finds that $L_f$ would need to have a negative length, which is impossible. This is not the case when $t_1$ is given by \eqref{eq:deriv_eq_tI2} and therefore this is the only possible value for $t_1$. The value of $L_f$ is thus
+\begin{align}
+L_f = \frac{\rho_1}{r_1}\sqrt{D^2-(r_2+r_1)^2}.
+\label{eq:val_Lf}
+\end{align}
+Having $L_f$ and $t_1$, one can finally find the value of $\omega$ using \eqref{eq:loop_closure_deriv3} and \eqref{eq:cross_prod_deriv1} as 
+\begin{align}
+\begin{multlined}
+\omega = \left(2m+1\right)\pi-t_1-\frac{\left(t_1+\frac{L_f}{\rho_1}\right)}{R}-\frac{2\pi(i-1)}{R},\\ i=1 ,\ldots , R, m \in \mathbb{N},
+\label{eq:delta_def}
+\end{multlined}
+\end{align}
+with $t_1$ given by \eqref{eq:deriv_eq_tI2} and $L_f$ given by \eqref{eq:val_Lf}. Equation \eqref{eq:delta_def} can be simplified since the output pulley is $2\pi/R$ symmetric about the $Z_2$ axis in figure \ref{fig:novel_arch}. The simplified version of \eqref{eq:delta_def} is written as
+\begin{align}
+\omega = \left(\frac{-\left(\varphi\left(R+1\right)+\frac{L_f}{\rho_1}\right)}{R}\right)//\left(\frac{2\pi}{R}\right),
+\end{align}
+where $a//b$ returns the remainder of $a$ divided by $b$.\\
 
-Clearly the text in this figure is unreadable, and it is doubtful that the author can print the output in a way that it is readable.  This is a problem that the author must solve, not the publisher. 
-
-As you might expect, I have many more examples, but in the end the author is the best judge of what is needed in each figure.  ASME simply requires that the image meet a minimum standard for font and line quality, specifically the font should be the appropriate size and not be blurred or pixilated, and that lines should be the appropriate weight and have minimal, preferably no, pixilation or rasterization.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Tables}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%% begin table   %%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{table}[t]
-\caption{Figure and table captions do not end with a period}
-\begin{center}
-\label{table_ASME}
-\begin{tabular}{c l l}
-& & \\ % put some space after the caption
-\hline
-Example & Time & Cost \\
-\hline
-1 & 12.5 & \$1,000 \\
-2 & 24 & \$2,000 \\
-\hline
-\end{tabular}
-\end{center}
-\end{table}
-%%%%%%%%%%%%%%%% end table %%%%%%%%%%%%%%%%%%% 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-All tables should be numbered consecutively  and centered above the table as shown in Table~\ref{table_ASME}. The body of the table should be no smaller than 7 pt.  There should be a minimum two line spaces between tables and text.
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Citing References}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-The ASME reference format is defined in the authors kit provided by the ASME.  The format is:
-
-\begin{quotation}
-{\em Text Citation}. Within the text, references should be cited in  numerical order according to their order of appearance.  The numbered reference citation should be enclosed in brackets.
-\end{quotation}
-
-The references must appear in the paper in the order that they were cited.  In addition, multiple citations (3 or more in the same brackets) must appear as a `` [1-3]''.  A complete definition of the ASME reference format can be found in the  ASME manual \cite{asmemanual}.
-
-The bibliography style required by the ASME is unsorted with entries appearing in the order in which the citations appear. If that were the only specification, the standard {\sc Bib}\TeX\ unsrt bibliography style could be used. Unfortunately, the bibliography style required by the ASME has additional requirements (last name followed by first name, periodical volume in boldface, periodical number inside parentheses, etc.) that are not part of the unsrt style. Therefore, to get ASME bibliography formatting, you must use the \verb+asmems4.bst+ bibliography style file with {\sc Bib}\TeX. This file is not part of the standard BibTeX distribution so you'll need to place the file someplace where LaTeX can find it (one possibility is in the same location as the file being typeset).
-
-With \LaTeX/{\sc Bib}\TeX, \LaTeX\ uses the citation format set by the class file and writes the citation information into the .aux file associated with the \LaTeX\ source. {\sc Bib}\TeX\ reads the .aux file and matches the citations to the entries in the bibliographic data base file specified in the \LaTeX\ source file by the \verb+\bibliography+ command. {\sc Bib}\TeX\ then writes the bibliography in accordance with the rules in the bibliography .bst style file to a .bbl file which \LaTeX\ merges with the source text.  A good description of the use of {\sc Bib}\TeX\ can be found in \cite{latex, goosens} (see how two references are handled?).  The following is an example of how three or more references \cite{latex, asmemanual,  goosens} show up using the \verb+asmems4.bst+ bibliography style file in conjunction with the \verb+asme2ej.cls+ class file. Here are some more \cite{art, blt, ibk, icn, ips, mts, mis, pro, pts, trt, upd} which can be used to describe almost any sort of reference.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Conclusions}
-The only way to ensure that your figures are presented in the ASME Journal of Mechanical Design in the way you feel is appropriate and meets the requirement for quality presentation is for you to prepare a double column version of the paper in a form similar to that used by the Journal.
-
-This gives you the opportunity to ensure that the figures are sized appropriately, in particular that the labels are readable and match the size of the text in the journal, and that the line weights and resolutions have no pixilation or rasterization.  Poor quality figures are immediately obvious on the printed page, and this detracts from the perceived quality of the journal.
-
-I am pleased to provide advice on how to improve any figure, but this effort must start with a two-column version of the manuscript. Thank you in advance for your patience with this effort, it will ensure quality presentation of your research contributions.
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Discussions}
-This template is not yet ASME journal paper format compliant at this point.
-More specifically, the following features are not ASME format compliant.
-\begin{enumerate}
-\item
-The format for the title, author, and abstract in the cover page.
-\item
-The font for title should be 24 pt Helvetica bold.
-\end{enumerate}
-
-\noindent
-If you can help to fix these problems, please send us an updated template.
-If you know there is any other non-compliant item, please let us know.
-We will add it to the above list.
-With your help, we shall make this template 
-compliant to the ASME journal paper format.
-
-
+Angle $\omega$ varies with the distance separating the axes of the input and output pulleys $D$. Knowing $D$, properly aligning the pulleys so that the cables follow a smooth path simply requires that both pulleys be locked during the cable mounting with the large pulley being rotated by an angle $\omega$ from the $X_1$ axis of the small pulley around the $Z_2$ axis of the large pulley. After having taught all the cables at both ends, the system can then be unlocked and the pulley grooves are properly aligned. This process is better illustrated in figure \ref{fig:process_align}.
+\begin{figure*}
+\centering
+\includegraphics[width = 0.7\textwidth]{steps.eps}
+\caption{Steps to align the drive pulleys for smooth cable trajectories.}
+\label{fig:process_align}
+\end{figure*}
+\section{Multimedia extension}
+A video accompanies this paper. The video demonstrates the operation of a prototype of the novel capstan drive as well as its backdrivability.
+\section{Conclusion}
+This paper presented a novel capstan drive architecture which uses grooves on both its input and output pulleys in order to increase the effective coefficient of friction between the drive cables and the pulleys. Using a previously established model of a capstan drive, it was shown that increasing the coefficient of friction between the drive cables and the drive pulleys increases the drive stiffness, which is an important property in several applications, including for instance physical human-robot interaction. Furthermore, the many grooves on the output pulley enable multi-cable arrangements which can even further increase the transmission's stiffness. A method to ensure that the drive cables can pass smoothly between the input and output pulley was also described. \\
+Future work on this novel capstan drive will consist in testing the established model in a test bench in order to quantify the increased coefficient of friction caused by the grooves as well as to quantify the increase in drive stiffness compared to a standard capstan drive. Furthermore, the influence of the increased drive stiffness on the drive's bandwidth will be analyzed and compared to other small-ratio transmissions in order to determine if this novel drive is advantageous for physical human robot interaction.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgment}
 This work was supported by the Natural Sciences and Engineering Research Council of Canada (NSERC) and by the
@@ -507,18 +494,5 @@ Canada Research Chair Program.
 % to you.
 %\bibliography{asme2e}
 \bibliography{./bibliography/asme2e}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\appendix       %%% starting appendix
-\section*{Appendix A: Head of First Appendix}
-Avoid Appendices if possible.
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section*{Appendix B: Head of Second Appendix}
-\subsection*{Subsection head in appendix}
-The equation counter is not reset in an appendix and the numbers will
-follow one continual sequence from the beginning of the article to the very end as shown in the following example.
-\begin{equation}
-a = b + c.
-\end{equation}
 
 \end{document}

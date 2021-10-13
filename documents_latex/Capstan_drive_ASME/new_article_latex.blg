@@ -1,64 +1,53 @@
 This is BibTeX, Version 0.99d (TeX Live 2019/W32TeX)
-Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: new_article_latex.aux
 The style file: asmems4.bst
 Database file #1: ./bibliography/asme2e.bib
-Warning--I didn't find a database entry for "asmemanual"
-Warning--I didn't find a database entry for "latex"
-Warning--I didn't find a database entry for "goosens"
-Warning--I didn't find a database entry for "art"
-Warning--I didn't find a database entry for "blt"
-Warning--I didn't find a database entry for "ibk"
-Warning--I didn't find a database entry for "icn"
-Warning--I didn't find a database entry for "ips"
-Warning--I didn't find a database entry for "mts"
-Warning--I didn't find a database entry for "mis"
-Warning--I didn't find a database entry for "pro"
-Warning--I didn't find a database entry for "pts"
-Warning--I didn't find a database entry for "trt"
-Warning--I didn't find a database entry for "upd"
 Warning--empty journal in carignan2000closed
 Warning--empty school in townsend1988effect
 Warning--empty year in gibsonfred
-You've used 26 entries,
+Warning--empty journal in gibsonfred
+Warning--empty year in koshaktraction
+Warning--empty journal in koshaktraction
+You've used 28 entries,
             1984 wiz_defined-function locations,
-            651 strings with 8956 characters,
-and the built_in function-call counts, 8023 in all, are:
-= -- 766
-> -- 284
+            644 strings with 9028 characters,
+and the built_in function-call counts, 8264 in all, are:
+= -- 783
+> -- 292
 < -- 0
-+ -- 112
-- -- 86
-* -- 511
-:= -- 1084
-add.period$ -- 78
-call.type$ -- 26
-change.case$ -- 25
++ -- 116
+- -- 88
+* -- 517
+:= -- 1123
+add.period$ -- 82
+call.type$ -- 28
+change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 425
-empty$ -- 748
-format.name$ -- 86
-if$ -- 1910
+cite$ -- 34
+duplicate$ -- 441
+empty$ -- 777
+format.name$ -- 88
+if$ -- 1963
 int.to.chr$ -- 0
-int.to.str$ -- 26
-missing$ -- 25
-newline$ -- 133
-num.names$ -- 26
-pop$ -- 118
+int.to.str$ -- 28
+missing$ -- 28
+newline$ -- 141
+num.names$ -- 28
+pop$ -- 131
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 311
+skip$ -- 313
 stack$ -- 0
 substring$ -- 599
-swap$ -- 213
+swap$ -- 214
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 3
-while$ -- 80
-width$ -- 28
-write$ -- 290
-(There were 17 warnings)
+warning$ -- 6
+while$ -- 82
+width$ -- 30
+write$ -- 305
+(There were 6 warnings)

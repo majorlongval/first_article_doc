@@ -1,0 +1,1205 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/W32TeX) (preloaded format=latex 2020.3.23)  7 OCT 2021 16:10
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**old_article_latex.tex
+(./old_article_latex.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25> (./sty/IEEEtran.cls
+
+LaTeX Warning: You have requested document class `./sty/IEEEtran',
+               but the document class provides `IEEEtran'.
+
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen134
+\@IEEEtrantmpdimenB=\dimen135
+\@IEEEtrantmpdimenC=\dimen136
+\@IEEEtrantmpcountA=\count167
+\@IEEEtrantmpcountB=\count168
+\@IEEEtrantmpcountC=\count169
+\@IEEEtrantmptoksA=\toks15
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 5
+03.
+(c:/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using DVI output.
+\@IEEEnormalsizeunitybaselineskip=\dimen137
+-- This is a 10 point document.
+\CLASSINFOnormalsizebaselineskip=\dimen138
+\CLASSINFOnormalsizeunitybaselineskip=\dimen139
+\IEEEnormaljot=\dimen140
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen141
+\IEEEquantizedlengthdiff=\dimen142
+\IEEEquantizedtextheightdiff=\dimen143
+\IEEEilabelindentA=\dimen144
+\IEEEilabelindentB=\dimen145
+\IEEEilabelindent=\dimen146
+\IEEEelabelindent=\dimen147
+\IEEEdlabelindent=\dimen148
+\IEEElabelindent=\dimen149
+\IEEEiednormlabelsep=\dimen150
+\IEEEiedmathlabelsep=\dimen151
+\IEEEiedtopsep=\skip47
+\c@section=\count170
+\c@subsection=\count171
+\c@subsubsection=\count172
+\c@paragraph=\count173
+\c@IEEEsubequation=\count174
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\c@figure=\count175
+\c@table=\count176
+\@IEEEeqnnumcols=\count177
+\@IEEEeqncolcnt=\count178
+\@IEEEsubeqnnumrollback=\count179
+\@IEEEquantizeheightA=\dimen152
+\@IEEEquantizeheightB=\dimen153
+\@IEEEquantizeheightC=\dimen154
+\@IEEEquantizeprevdepth=\dimen155
+\@IEEEquantizemultiple=\count180
+\@IEEEquantizeboxA=\box45
+\@IEEEtmpitemindent=\dimen156
+\IEEEPARstartletwidth=\dimen157
+\c@IEEEbiography=\count181
+\@IEEEtranrubishbin=\box46
+) (c:/texlive/2019/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+) (c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip50
+
+For additional information on amsmath, use the `?' option.
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks16
+\ex@=\dimen158
+))
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen159
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count182
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count183
+\leftroot@=\count184
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count185
+\DOTSCASE@=\count186
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box47
+\strutbox@=\box48
+\big@size=\dimen160
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count187
+\c@MaxMatrixCols=\count188
+\dotsspace@=\muskip16
+\c@parentequation=\count189
+\dspbrk@lvl=\count190
+\tag@help=\toks17
+\row@=\count191
+\column@=\count192
+\maxfields@=\count193
+\andhelp@=\toks18
+\eqnshift@=\dimen161
+\alignsep@=\dimen162
+\tagshift@=\dimen163
+\tagwidth@=\dimen164
+\totwidth@=\dimen165
+\lineht@=\dimen166
+\@envbody=\toks19
+\multlinegap=\skip51
+\multlinetaggap=\skip52
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(c:/texlive/2019/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+)
+(c:/texlive/2019/texmf-dist/tex/latex/tools/array.sty
+Package: array 2019/08/31 v2.4l Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box49
+\extrarowheight=\dimen168
+\NC@list=\toks21
+\extratabsurround=\skip53
+\backup@length=\skip54
+\ar@cellbox=\box50
+)
+(c:/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen169
+\lightrulewidth=\dimen170
+\cmidrulewidth=\dimen171
+\belowrulesep=\dimen172
+\belowbottomsep=\dimen173
+\aboverulesep=\dimen174
+\abovetopsep=\dimen175
+\cmidrulesep=\dimen176
+\cmidrulekern=\dimen177
+\defaultaddspace=\dimen178
+\@cmidla=\count194
+\@cmidlb=\count195
+\@aboverulesep=\dimen179
+\@belowrulesep=\dimen180
+\@thisruleclass=\count196
+\@lastruleclass=\count197
+\@thisrulewidth=\dimen181
+)
+(c:/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2020/01/17 v1.23 mathematical typesetting tools
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks22
+)
+(c:/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count198
+\calc@Bcount=\count199
+\calc@Adimen=\dimen182
+\calc@Bdimen=\dimen183
+\calc@Askip=\skip55
+\calc@Bskip=\skip56
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count266
+\calc@Cskip=\skip57
+)
+(c:/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count267
+\l_MT_multwidth_dim=\dimen184
+\origjot=\skip58
+\l_MT_shortvdotswithinadjustabove_dim=\dimen185
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen186
+\l_MT_above_intertext_sep=\dimen187
+\l_MT_below_intertext_sep=\dimen188
+\l_MT_above_shortintertext_sep=\dimen189
+\l_MT_below_shortintertext_sep=\dimen190
+)
+(c:/texlive/2019/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2020/01/15 v2.11c `tabularx' package (DPC)
+\TX@col@width=\dimen191
+\TX@old@table=\dimen192
+\TX@old@col=\dimen193
+\TX@target=\dimen194
+\TX@delta=\dimen195
+\TX@cols=\count268
+\TX@ftn=\toks23
+)
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: dvips.def on input line 105.
+
+(c:/texlive/2019/texmf-dist/tex/latex/graphics-def/dvips.def
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+))
+\Gin@req@height=\dimen196
+\Gin@req@width=\dimen197
+)
+(./sty/subfig.sty
+
+LaTeX Warning: You have requested package `./sty/subfig',
+               but the package provides `subfig'.
+
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+(c:/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen198
+\captionmargin@=\dimen199
+\captionwidth=\dimen256
+\caption@tempdima=\dimen257
+\caption@indent=\dimen258
+\caption@parindent=\dimen259
+\caption@hangindent=\dimen260
+Package caption Info: Unknown document class (or package),
+(caption)             standard defaults will be used.
+Package caption Info: \@makecaption = \long macro:#1#2->\ifx \@captype \@IEEEta
+blestring \footnotesize \bgroup \par \centering \@IEEEtabletopskipstrut {\norma
+lfont \footnotesize #1}\\{\normalfont \footnotesize \scshape #2}\par \addvspace
+ {0.5\baselineskip }\egroup \@IEEEtablecaptionsepspace \else \@IEEEfigurecaptio
+nsepspace \setbox \@tempboxa \hbox {\normalfont \footnotesize {#1.}\nobreakspac
+e \nobreakspace #2}\ifdim \wd \@tempboxa >\hsize \setbox \@tempboxa \hbox {\nor
+malfont \footnotesize {#1.}\nobreakspace \nobreakspace }\parbox [t]{\hsize }{\n
+ormalfont \footnotesize \noindent \unhbox \@tempboxa #2}\else \ifCLASSOPTIONcon
+ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
+\else \hbox to\hsize {\normalfont \footnotesize \box \@tempboxa \hfil }\fi \fi 
+\fi  on input line 1082.
+)
+\c@KVtest=\count269
+\sf@farskip=\skip59
+\sf@captopadj=\dimen261
+\sf@capskip=\skip60
+\sf@nearskip=\skip61
+\c@subfigure=\count270
+\c@subfigure@save=\count271
+\c@lofdepth=\count272
+\c@subtable=\count273
+\c@subtable@save=\count274
+\c@lotdepth=\count275
+\sf@top=\skip62
+\sf@bottom=\skip63
+)
+(c:/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
+File: l3backend-dvips.def 2020-02-23 L3 backend support: dvips
+\l__pdf_internal_box=\box51
+\g__pdf_backend_object_int=\count276
+\l__pdf_backend_content_box=\box52
+\l__pdf_backend_model_box=\box53
+\g__pdf_backend_annotation_int=\count277
+\g__pdf_backend_link_int=\count278
+\g__pdf_backend_link_sf_int=\count279
+)
+No file old_article_latex.aux.
+\openout1 = `old_article_latex.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 371.
+LaTeX Font Info:    ... okay on input line 371.
+-- Lines per column: 58 (exact).
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 451
+.
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 451
+.
+
+(c:/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+
+LaTeX Warning: Citation `roveda2018high' on page 1 undefined on input line 494.
+
+
+
+LaTeX Warning: Citation `meissner2018smart' on page 1 undefined on input line 4
+94.
+
+
+LaTeX Warning: Citation `raessa2019teaching' on page 1 undefined on input line 
+494.
+
+
+LaTeX Warning: Citation `loughlin2007dlr' on page 1 undefined on input line 494
+.
+
+
+LaTeX Warning: Citation `xiaoqing2011mechanical' on page 1 undefined on input l
+ine 496.
+
+
+LaTeX Warning: Citation `phantom' on page 1 undefined on input line 496.
+
+
+LaTeX Warning: Citation `wen2019kinematically' on page 1 undefined on input lin
+e 496.
+
+
+LaTeX Warning: Citation `9306904' on page 1 undefined on input line 496.
+
+
+LaTeX Warning: Citation `gosselin2011specification' on page 1 undefined on inpu
+t line 507.
+
+
+LaTeX Warning: Citation `perret2014advantages' on page 1 undefined on input lin
+e 507.
+
+
+LaTeX Warning: Citation `baumann1998haptic' on page 1 undefined on input line 5
+07.
+
+
+LaTeX Warning: Citation `carignan2000closed' on page 1 undefined on input line 
+507.
+
+
+LaTeX Warning: Reference `tab:LRT' on page 1 undefined on input line 507.
+
+
+LaTeX Warning: No positions in optional float specifier.
+               Default added (so using `tbp') on input line 508.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.509 ...omparison of different backdrivable LRT.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
+[]|\OT1/ptm/m/n/8 Transmission over a
+ []
+
+
+Underfull \hbox (badness 7099) in paragraph at lines 527--527
+[]|\OT1/ptm/m/n/8 Higher stiff-ness than
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 527--527
+[]|\OT1/ptm/m/n/8 Lower stiff-ness than
+ []
+
+
+Overfull \hbox (6.0pt too wide) in paragraph at lines 527--528
+[][] 
+ []
+
+
+LaTeX Warning: Reference `tab:LRT' on page 1 undefined on input line 529.
+
+
+LaTeX Warning: Citation `perret2014advantages' on page 1 undefined on input lin
+e 529.
+
+
+LaTeX Warning: Citation `baser2013kinematic' on page 1 undefined on input line 
+529.
+
+
+LaTeX Warning: Citation `townsend1988effect' on page 1 undefined on input line 
+529.
+
+
+LaTeX Warning: Citation `rooks2006harmonious' on page 1 undefined on input line
+ 529.
+
+
+LaTeX Warning: Citation `phan2014guided' on page 1 undefined on input line 529.
+
+
+
+LaTeX Warning: Citation `lu2015development' on page 1 undefined on input line 5
+29.
+
+
+LaTeX Warning: Citation `lu2012non' on page 1 undefined on input line 529.
+
+
+LaTeX Warning: Citation `lu2013transmission' on page 1 undefined on input line 
+529.
+
+
+LaTeX Warning: Citation `xie2019analytical' on page 1 undefined on input line 5
+29.
+
+
+LaTeX Warning: Citation `brooks1990telerobotic' on page 1 undefined on input li
+ne 529.
+
+
+LaTeX Warning: Citation `gealy2019quasi' on page 1 undefined on input line 529.
+
+
+
+LaTeX Warning: Reference `tab:LRT' on page 1 undefined on input line 529.
+
+
+LaTeX Warning: Citation `lu2013transmission' on page 1 undefined on input line 
+529.
+
+
+LaTeX Warning: Citation `baser2010theoretical' on page 1 undefined on input lin
+e 529.
+
+
+LaTeX Warning: Citation `werkmeister2007theoretical' on page 1 undefined on inp
+ut line 530.
+
+
+LaTeX Warning: Citation `baser2010theoretical' on page 1 undefined on input lin
+e 530.
+
+
+LaTeX Warning: Citation `lu2012non' on page 1 undefined on input line 530.
+
+[1
+
+
+]
+
+LaTeX Warning: Reference `fig:model_capstan' on page 2 undefined on input line 
+532.
+
+File: ./images/modelling_of_capstan_drive.eps Graphic file (type eps)
+<./images/modelling_of_capstan_drive.eps>
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.536     \caption{Modelling of a capstan drive.}
+                                                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:model_capstan' on page 2 undefined on input line 
+539.
+
+
+LaTeX Warning: Reference `fig:model_capstan' on page 2 undefined on input line 
+539.
+
+
+LaTeX Warning: Reference `fig:model_capstan' on page 2 undefined on input line 
+550.
+
+
+LaTeX Warning: Reference `fig:friction_fig' on page 2 undefined on input line 5
+50.
+
+File: ./images/capstan_equation.eps Graphic file (type eps)
+<./images/capstan_equation.eps>
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.554 ...segment of the cable pulley interaction.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:friction_fig' on page 2 undefined on input line 5
+58.
+
+
+LaTeX Warning: Reference `eq:sum_f_x' on page 2 undefined on input line 567.
+
+
+LaTeX Warning: Reference `eq:sum_f_y' on page 2 undefined on input line 567.
+
+
+LaTeX Warning: Reference `fig:friction_fig' on page 2 undefined on input line 5
+71.
+
+
+LaTeX Warning: Reference `eq:diff' on page 2 undefined on input line 571.
+
+[2]
+
+LaTeX Warning: Reference `eq:int_beta' on page 3 undefined on input line 583.
+
+
+LaTeX Warning: Reference `eq:tens_increase' on page 3 undefined on input line 5
+83.
+
+
+LaTeX Warning: Reference `eq:tens_decrease' on page 3 undefined on input line 5
+83.
+
+
+LaTeX Warning: Reference `fig:model_capstan' on page 3 undefined on input line 
+583.
+
+
+LaTeX Warning: Reference `eq:Tens1' on page 3 undefined on input line 590.
+
+
+LaTeX Warning: Reference `eq:Tens4' on page 3 undefined on input line 590.
+
+
+LaTeX Warning: Reference `eq:complete_short' on page 3 undefined on input line 
+597.
+
+
+LaTeX Warning: Reference `eq:complete_short' on page 3 undefined on input line 
+599.
+
+
+LaTeX Warning: Reference `eq:int_deform_i_theta' on page 3 undefined on input l
+ine 604.
+
+
+LaTeX Warning: Reference `eq:complete_short' on page 3 undefined on input line 
+616.
+
+
+LaTeX Warning: Reference `eq:defo1' on page 3 undefined on input line 623.
+
+
+LaTeX Warning: Reference `eq:defof2' on page 3 undefined on input line 623.
+
+[3]
+
+LaTeX Warning: Reference `eq:lin_stiff' on page 4 undefined on input line 655.
+
+
+LaTeX Warning: Reference `eq:rot_disp' on page 4 undefined on input line 655.
+
+
+LaTeX Warning: Reference `eq:rot_stiff' on page 4 undefined on input line 655.
+
+
+LaTeX Warning: Reference `fig:distib_force' on page 4 undefined on input line 6
+61.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.664     \subfloat
+                   [Uniform distribution.\label{fig:uniform_force}]{\include...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...captiontopfalse }\caption@settype 
+                                                  {subfloat}\caption@settype...
+l.664     \subfloat
+                   [Uniform distribution.\label{fig:uniform_force}]{\include...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...ettype {subfloat}\caption@settype 
+                                                  {sub\@captype }\let \sf@ol...
+l.664     \subfloat
+                   [Uniform distribution.\label{fig:uniform_force}]{\include...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./images/distribution_de_force_cable.eps Graphic file (type eps)
+<./images/distribution_de_force_cable.eps>
+! Undefined control sequence.
+<argument> ...sub\@captype }}}{\caption@subreffmt 
+                                                  {\@nameuse {p@sub\@captype...
+l.664 ...nwidth]{distribution_de_force_cable.eps}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (41.81999pt too wide) in paragraph at lines 664--665
+ []\OT1/ptm/m/n/10 figuresubfloatsubfigure[] 
+ []
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.666     \subfloat
+                   [General distribution.\label{fig:general_force}]{\include...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...captiontopfalse }\caption@settype 
+                                                  {subfloat}\caption@settype...
+l.666     \subfloat
+                   [General distribution.\label{fig:general_force}]{\include...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...ettype {subfloat}\caption@settype 
+                                                  {sub\@captype }\let \sf@ol...
+l.666     \subfloat
+                   [General distribution.\label{fig:general_force}]{\include...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./images/distribution_tension_gen.eps Graphic file (type eps)
+<./images/distribution_tension_gen.eps>
+! Undefined control sequence.
+<argument> ...sub\@captype }}}{\caption@subreffmt 
+                                                  {\@nameuse {p@sub\@captype...
+l.666 ...lumnwidth]{distribution_tension_gen.eps}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.667 ...rface between the cable and the pulleys.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (65.14983pt too wide) in paragraph at lines 666--667
+ []\OT1/ptm/m/n/10 figuresubfloatsubfigure[]figure 
+ []
+
+
+LaTeX Warning: Reference `fig:distib_force' on page 4 undefined on input line 6
+70.
+
+
+LaTeX Warning: Reference `fig:uniform_force' on page 4 undefined on input line 
+670.
+
+
+LaTeX Warning: Reference `fig:friction_fig' on page 4 undefined on input line 6
+70.
+
+
+LaTeX Warning: Reference `fig:uniform_force' on page 4 undefined on input line 
+675.
+
+
+LaTeX Warning: Reference `eq:small_normforce' on page 4 undefined on input line
+ 679.
+
+
+LaTeX Warning: Reference `eq:small_friction' on page 4 undefined on input line 
+679.
+
+
+LaTeX Warning: Reference `eq:eff_fric' on page 4 undefined on input line 683.
+
+
+LaTeX Warning: Reference `fig:general_force' on page 4 undefined on input line 
+683.
+
+[4]
+
+LaTeX Warning: Reference `fig:novel_arch' on page 5 undefined on input line 693
+.
+
+
+LaTeX Warning: Reference `fig:novel_arch' on page 5 undefined on input line 693
+.
+
+File: ./images/test_print_poulies.eps Graphic file (type eps)
+<./images/test_print_poulies.eps>
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.697 ...Architecture of the novel capstan drive.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:cable_arrangements' on page 5 undefined on input 
+line 702.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.705     \subfloat
+                   [One cable fixed at both ends to the output pulley.\label...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...captiontopfalse }\caption@settype 
+                                                  {subfloat}\caption@settype...
+l.705     \subfloat
+                   [One cable fixed at both ends to the output pulley.\label...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...ettype {subfloat}\caption@settype 
+                                                  {sub\@captype }\let \sf@ol...
+l.705     \subfloat
+                   [One cable fixed at both ends to the output pulley.\label...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./images/only_one_cable_multi_loops.eps Graphic file (type eps)
+<./images/only_one_cable_multi_loops.eps>
+! Undefined control sequence.
+<argument> ...sub\@captype }}}{\caption@subreffmt 
+                                                  {\@nameuse {p@sub\@captype...
+l.706 ...mnwidth]{only_one_cable_multi_loops.eps}}
+                                                  \hspace{0.1\textwidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.707     \subfloat
+                   [Two cables both fixed at both ends to the output pulley....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...captiontopfalse }\caption@settype 
+                                                  {subfloat}\caption@settype...
+l.707     \subfloat
+                   [Two cables both fixed at both ends to the output pulley....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...ettype {subfloat}\caption@settype 
+                                                  {sub\@captype }\let \sf@ol...
+l.707     \subfloat
+                   [Two cables both fixed at both ends to the output pulley....
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./images/two_cables_multi_loops.eps Graphic file (type eps)
+<./images/two_cables_multi_loops.eps>
+! Undefined control sequence.
+<argument> ...sub\@captype }}}{\caption@subreffmt 
+                                                  {\@nameuse {p@sub\@captype...
+l.707 ...columnwidth]{two_cables_multi_loops.eps}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.709     \subfloat
+                   [Two cables with ends fixed at the input pulley and the o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...captiontopfalse }\caption@settype 
+                                                  {subfloat}\caption@settype...
+l.709     \subfloat
+                   [Two cables with ends fixed at the input pulley and the o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...ettype {subfloat}\caption@settype 
+                                                  {sub\@captype }\let \sf@ol...
+l.709     \subfloat
+                   [Two cables with ends fixed at the input pulley and the o...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./images/two_cables_all_loops.eps Graphic file (type eps)
+<./images/two_cables_all_loops.eps>
+! Undefined control sequence.
+<argument> ...sub\@captype }}}{\caption@subreffmt 
+                                                  {\@nameuse {p@sub\@captype...
+l.709 ...4\columnwidth]{two_cables_all_loops.eps}}
+                                                  \hspace{0.1\textwidth}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.710     \subfloat
+                   [Three cables, two having ends fixed at the input and out...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...captiontopfalse }\caption@settype 
+                                                  {subfloat}\caption@settype...
+l.710     \subfloat
+                   [Three cables, two having ends fixed at the input and out...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\sf@subfloat ...ettype {subfloat}\caption@settype 
+                                                  {sub\@captype }\let \sf@ol...
+l.710     \subfloat
+                   [Three cables, two having ends fixed at the input and out...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: ./images/three_cables_multi_loops.eps Graphic file (type eps)
+<./images/three_cables_multi_loops.eps>
+! Undefined control sequence.
+<argument> ...sub\@captype }}}{\caption@subreffmt 
+                                                  {\@nameuse {p@sub\@captype...
+l.710 ...lumnwidth]{three_cables_multi_loops.eps}}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.711 ...n{Different possible cable arrangements.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `fig:single_cable_multi_loops' on page 5 undefined on 
+input line 714.
+
+
+LaTeX Warning: Reference `fig:model_capstan' on page 5 undefined on input line 
+714.
+
+
+LaTeX Warning: Reference `fig:2cables_multi_loops' on page 5 undefined on input
+ line 714.
+
+
+LaTeX Warning: Reference `fig:multi_cables_full_loops' on page 5 undefined on i
+nput line 715.
+
+
+LaTeX Warning: Reference `fig:single_cable_multi_loops' on page 5 undefined on 
+input line 715.
+
+
+LaTeX Warning: Reference `fig:three_cables_multi_loops' on page 5 undefined on 
+input line 716.
+
+
+LaTeX Warning: Reference `fig:cable_arrangements' on page 5 undefined on input 
+line 717.
+
+
+LaTeX Warning: Reference `fig:cable_arrangements' on page 5 undefined on input 
+line 721.
+
+
+LaTeX Warning: Reference `eq:helix_1nput' on page 5 undefined on input line 731
+.
+
+[5] [6]
+
+LaTeX Warning: Reference `eq:output_helix' on page 7 undefined on input line 75
+1.
+
+
+LaTeX Warning: Reference `eq:loop_closure' on page 7 undefined on input line 77
+8.
+
+
+LaTeX Warning: Reference `eq:cross_prod_3' on page 7 undefined on input line 80
+2.
+
+
+LaTeX Warning: Reference `eq:cross_prod_deriv1' on page 7 undefined on input li
+ne 806.
+
+
+LaTeX Warning: Reference `eq:cross_prod_1' on page 7 undefined on input line 80
+6.
+
+
+LaTeX Warning: Reference `eq:cross_prod_2' on page 7 undefined on input line 80
+6.
+
+
+LaTeX Warning: Reference `eq:cross_prod_deriv2' on page 7 undefined on input li
+ne 811.
+
+
+LaTeX Warning: Reference `eq:cross_prod_deriv3' on page 7 undefined on input li
+ne 811.
+
+
+LaTeX Warning: Reference `eq:cross_prod_deriv1' on page 7 undefined on input li
+ne 819.
+
+
+LaTeX Warning: Reference `eq:cond_cross_prod_2' on page 7 undefined on input li
+ne 819.
+
+
+LaTeX Warning: Reference `eq:cond_cross_prod_3' on page 7 undefined on input li
+ne 819.
+
+
+LaTeX Warning: Reference `eq:loop_closure_deriv1' on page 7 undefined on input 
+line 819.
+
+
+LaTeX Warning: Reference `eq:loop_closure_deriv3' on page 7 undefined on input 
+line 819.
+
+
+LaTeX Warning: Reference `eq:loop_closure_deriv4' on page 7 undefined on input 
+line 824.
+
+
+LaTeX Warning: Reference `eq:loop_closure_deriv5' on page 7 undefined on input 
+line 824.
+
+
+LaTeX Warning: Reference `eq:deriv_eq_tI' on page 7 undefined on input line 828
+.
+
+
+LaTeX Warning: Reference `eq:deriv_eq_tI3' on page 7 undefined on input line 83
+7.
+
+
+LaTeX Warning: Reference `eq:loop_closure_deriv4' on page 7 undefined on input 
+line 837.
+
+
+LaTeX Warning: Reference `eq:deriv_eq_tI2' on page 7 undefined on input line 83
+7.
+
+
+LaTeX Warning: Reference `eq:loop_closure_deriv3' on page 7 undefined on input 
+line 842.
+
+
+LaTeX Warning: Reference `eq:cross_prod_deriv1' on page 7 undefined on input li
+ne 842.
+
+[7]
+
+LaTeX Warning: Reference `eq:deriv_eq_tI2' on page 8 undefined on input line 84
+9.
+
+
+LaTeX Warning: Reference `eq:val_Lf' on page 8 undefined on input line 849.
+
+
+LaTeX Warning: Reference `eq:delta_def' on page 8 undefined on input line 849.
+
+
+LaTeX Warning: Reference `fig:novel_arch' on page 8 undefined on input line 849
+.
+
+
+LaTeX Warning: Reference `eq:delta_def' on page 8 undefined on input line 849.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 852--854
+
+ []
+
+
+LaTeX Warning: Reference `fig:process_align' on page 8 undefined on input line 
+855.
+
+File: ./images/steps.eps Graphic file (type eps)
+<./images/steps.eps>
+! Undefined control sequence.
+<argument> \caption@settype 
+                            
+l.859 ...e pulleys for smooth cable trajectories.}
+                                                  
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+No file old_article_latex.bbl.
+[8
+
+] [9] (./old_article_latex.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 4002 strings out of 480995
+ 66250 string characters out of 5916073
+ 328697 words of memory out of 5000000
+ 19480 multiletter control sequences out of 15000+600000
+ 563009 words of font info for 97 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,18n,49p,1880b,327s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on old_article_latex.dvi (9 pages, 56340 bytes).
