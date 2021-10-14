@@ -27,9 +27,10 @@ q1 = Matrix(3,1,[-r_1*sin(phi), -r_1*cos(phi),H_1/(2*pi)])
 q2 = Matrix(3,1,[r_1*sin(3*pi-phi), r_1*cos(3*pi-phi),-H_1/(2*pi)])
 u1 = simplify(q1/rho_1)
 u2 = simplify(q2/rho_1)
-Lf = rho_1*sqrt(D**2-(r_2+r_1)**2)/r_1
+Lf = 1#rho_1*sqrt(D**2-(r_2+r_1)**2)/r_1
 full = simplify((Lf**2)*dot_prod(cross_prod(u1,u2),p2-p1)/norm(cross_prod(u1,u2)))
 
+print_latex(full)
 # Turning the full expression into a python function
 f = lambdify([r_1, r_2, D, H_1], full)
 
