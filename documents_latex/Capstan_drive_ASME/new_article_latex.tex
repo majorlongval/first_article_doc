@@ -68,7 +68,7 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract}
-{\it This article introduces a novel backdrivable high-stiffness cable capstan drive architecture for robotics applications. The drive has a low transmission ratio and a higher stiffness than typical capstan drives. The higher transmission stiffness is obtained by the use of grooves on both the input and the output pulleys of the drive which increases the effective coefficient of friction between the pulleys and the cable. The groove on the input pulley forms a single helix while the grooves on the output pulley form a $R$-helix, where $R$ is equal to the transmission ratio of the drive. This property enables several different multi-cable arrangements for the drive, which further increases the transmission stiffness. A kinematic model of the capstan drive is established and used to ensure the proper alignment of the input pulley groove and output pulley grooves as a function of the distance between the pulleys. A 3D printed prototype of the transmission is presented.
+{\it This article introduces a novel backdrivable high-stiffness cable capstan drive architecture for robotics applications. The drive has a low transmission ratio and a higher stiffness than typical capstan drives. The higher transmission stiffness is obtained by the use of grooves on both the input and the output pulleys of the drive which increases the effective coefficient of friction between the pulleys and the cable. The groove on the input pulley forms a single helix while the grooves on the output pulley form a $R$-helix, where $R$ is equal to the transmission ratio of the drive. This property enables several different multi-cable arrangements for the drive, which further increases the transmission stiffness. A kinematic model of the capstan drive is established and used to ensure the proper alignment of the input pulley groove and output pulley grooves as a function of the distance between the pulleys. A 3D-printed prototype of the transmission is presented.
 }
 \end{abstract}
 
@@ -104,8 +104,8 @@ Cable (capstan drive) &
   \begin{tabular}[c]{@{}X@{}}Lower stiffness than chain and gears\\ Slip error\end{tabular} \\ \bottomrule
 \end{tabularx}
 \end{table}
-\par Table \ref{tab:LRT} shows that a capstan drive is a good choice of backdrivable LRT because it has higher stiffness than a belt drive and it has a low backlash like gears or chain drives. This is why it is used in haptic devices \cite{perret2014advantages}\cite{baser2013kinematic}, highly backdrivable collaborative robots \cite{townsend1988effect}\cite{rooks2006harmonious}\cite{phan2014guided} and high precision targeting systems \cite{lu2015development}\cite{lu2012non}\cite{lu2013transmission}\cite{xie2019analytical}. Having low backlash is very important for  robotics applications which require the robot's motors to work in both directions at a high frequency \cite{brooks1990telerobotic}\cite{gealy2019quasi}. However, Table \ref{tab:LRT} also shows that capstan drives have lower stiffness than other LRT such as gears and can be subject to slip error \cite{lu2013transmission}\cite{baser2010theoretical}.\par
-In order to alleviate these drawbacks, this article presents a novel capstan architecture that increases the stiffness of the transmission by using grooves on the transmission's pulleys. The grooves increase the friction coefficient between the cable and the pulleys, which makes the transmission stiffer. This concept has already been used in cable transmissions for elevators as described in \cite{elevator_german} and \cite{elevator} Moreover, the novel capstan drive allows multiple cable arrangements, which further increases the stiffness of the transmission.\par This paper is structured as follows. In Section 2 and 3, the general modelling of a capstan drive and its torsional stiffness are recalled. The theoretical model used here is based on the work of Werkmeister et al.\cite{werkmeister2007theoretical}. Part of this model is also used in \cite{baser2010theoretical}. Section 4 discusses the fact that grooves etched along the surface of a capstan drive's pulleys can theoretically increase the friction coefficient between the drive's cable and its pulleys thus increasing the overall stiffness of the capstan drive. This effect has been discussed in different reference books such as \cite{elevator_german} and \cite{elevator}. The result of an experiment which proves this effect is also presented in  section 4. The use of grooves in capstan drives has already been presented in \cite{lu2012non}. However, this paper presents a novel design for the output pulley of a capstan drive which uses grooves arranged as a multiple helix. The novel design enables different multi-cable arrangements of the capstan drive that can theoretically further increase its torsional stiffness. The novel capstan drive architecture as well as different possible cable arrangements are presented in Section 5. The advantages and disadvantages  of each of the proposed arrangements are discussed. Section 6 then proposes a method to properly arrange the capstan drive's pulleys during the drive's assembly so that the cables can follow a smooth and continuous path while passing from one pulley to the other while avoiding cable interference. Section 7 shows that it is always possible to avoid two cables interfering with one another if the distance between the pulleys is large enough. Finally, concluding remarks are made in Section 9.
+\par Table \ref{tab:LRT} shows that a capstan drive is a good choice of backdrivable LRT because it has higher stiffness than a belt drive and it has a lower backlash than gears or chain drives. This is why it is used in haptic devices \cite{perret2014advantages}\cite{baser2013kinematic}, highly backdrivable collaborative robots \cite{townsend1988effect}\cite{rooks2006harmonious}\cite{phan2014guided} and high precision targeting systems \cite{lu2015development}\cite{lu2012non}\cite{lu2013transmission}\cite{xie2019analytical}. Having low backlash is very important for  robotics applications which require the robot's motors to work in both directions at a high frequency \cite{brooks1990telerobotic}\cite{gealy2019quasi}. However, Table \ref{tab:LRT} also shows that capstan drives have lower stiffness than other LRT such as gears and can be subject to slip error \cite{lu2013transmission}\cite{baser2010theoretical}.\par
+In order to alleviate these drawbacks, this article presents a novel capstan architecture that increases the stiffness of the transmission by using grooves on the transmission's pulleys. The grooves increase the effective friction coefficient between the cable and the pulleys, which makes the transmission stiffer. This concept has already been used in cable transmissions for elevators as described in \cite{elevator_german} and \cite{elevator}. Moreover, the novel capstan drive allows multiple cable arrangements, which further increases the stiffness of the transmission.\par This paper is structured as follows. In Sections 2 and 3, the general modelling of a capstan drive and its torsional stiffness are recalled. The theoretical model used here is based on the work of Werkmeister et al.\cite{werkmeister2007theoretical}. Part of this model is also used in \cite{baser2010theoretical}. Section 4 discusses the fact that grooves etched along the surface of a capstan drive's pulleys can theoretically increase the effective friction coefficient between the drive's cable and its pulleys thus increasing the overall stiffness of the capstan drive. This effect has been discussed in different reference books such as \cite{elevator_german} and \cite{elevator}. The result of an experiment that validates this effect is also presented in  Section 4. The use of grooves in capstan drives has already been presented in \cite{lu2012non}. However, this paper presents a novel design for the output pulley of a capstan drive which uses grooves arranged as a multiple helix. The novel design enables different multi-cable arrangements of the capstan drive that can theoretically further increase its torsional stiffness. The novel capstan drive architecture as well as different possible cable arrangements are presented in Section 5. The advantages and disadvantages  of each of the proposed arrangements are discussed. Section 6 then proposes a method to properly arrange the capstan drive's pulleys during the drive's assembly so that the cables can follow a smooth and continuous path while passing from one pulley to the other while avoiding cable interference. Section 7 shows that it is always possible to avoid two cables interfering with one another if the distance between the pulleys is large enough. A video presenting the operation of a 3D-printed prototype is introduced in Section 8. Finally, concluding remarks are made in Section 9.
 \section{Modelling of a capstan drive}
 Figure \ref{fig:model_capstan} presents the different elements of the capstan drive model.
 \begin{figure}
@@ -146,7 +146,7 @@ Applying these approximations to\eqref{eq:sum_f_x} and \eqref{eq:sum_f_y} gives
 \begin{align}
     \frac{dT}{T} = \mu d\theta. \label{eq:diff}
 \end{align}
-In figure \ref{fig:friction_fig}, when the tension varies from $T_1$ to $T_2$ where $T_2>T_1$, the integration over the angle $\beta$ of \eqref{eq:diff} gives
+In figure \ref{fig:friction_fig}, when the tension varies from $T_1$ to $T_2$ where $T_2>T_1$, the integration of \eqref{eq:diff} over the angle $\beta$  gives
 \begin{align} 
 \beta = \frac{1}{\mu}\ln\left(\frac{T_2}{T_1}\right).
 \label{eq:int_beta}
@@ -207,13 +207,13 @@ where $\delta_{f1}$ and $\delta_{f2}$ are the deformations on the tight and slac
      \Rightarrow C_{s3} =
      \frac{r_1}{AE\mu}\left(\frac{T_\ell}{T_p-T_\ell}\right)= \frac{1}{K_{s3}}\\
      \Rightarrow C_{s4} =
-     \frac{r_2}{AE\mu}\left(\frac{T_\ell}{T_p-T_\ell}\right)= \frac{1}{K_{s1}}\label{eq:simple_stiff_4}
+     \frac{r_2}{AE\mu}\left(\frac{T_\ell}{T_p-T_\ell}\right)= \frac{1}{K_{s4}}.\label{eq:simple_stiff_4}
  \end{align}
  For the stiffnesses of the free sections of the cable, one obtains
  \begin{align}
-     K_{f1}=K_{f2}=\frac{AE}{L_f}
+     K_{f1}=K_{f2}=\frac{AE}{L_f}.
  \end{align}
- The total stiffness of the capstan transmission is obtained by combining the individual stiffnesses of the cable segments along the transmission. The stiffness elements $K_{s1},K_{f_1}$ and $K_{s2}$ form a serial combination of springs. The same can be said for $K_{s3},K_{f_2}$ and $K_{s4}$. The two serial springs groups are in parallel to one another meaning that the total stiffness of the transmission can be written as 
+ The total stiffness of the capstan transmission is obtained by combining the individual stiffnesses of the cable segments along the transmission. The stiffness elements $K_{s1},K_{f_1}$ and $K_{s2}$ form a serial combination of springs. The same can be said for $K_{s3},K_{f_2}$ and $K_{s4}$. The two serial spring groups are in parallel to one another meaning that the total stiffness of the transmission can be written as 
  \begin{align}
      K = K_1 + K_2,
  \end{align}
@@ -235,23 +235,23 @@ where $\delta_{f1}$ and $\delta_{f2}$ are the deformations on the tight and slac
  \begin{align}
      K_t = Kr_2^2. 
  \end{align}
-The following section shows how placing the capstan transmission's cable into grooves helps to increase the coefficient of friction between the cable and the pulleys and therefore the transmission's stiffness.
+The following section shows how placing the capstan transmission's cable into grooves helps to increase the effective coefficient of friction between the cable and the pulleys and therefore the transmission's stiffness.
 
 \section{Influence of grooves on the capstan drive stiffness}
- Analyzing the equations for the stiffness of the different cable sections of a capstan drive ((24) to (28)), one can clearly see that most of the stiffness terms are proportional to the coefficient of friction. Therefore, Increasing the coefficient of friction between the cable and the pulleys is an effective way to increase the overall stiffness of the transmission. Typically, the coefficient of friction is a property that is only dependant on the nature of the materials at the friction interface. However, like for a v-belt drive, by changing the geometry of the interface between two surfaces, it is possible to change the apparent coefficient of friction. The way a circular groove interacts with a cable to increase the apparent coefficient of friction has been studied many times as grooves are often used in elevator mechanical design \cite{elevator_german}\cite{elevator}\cite{gibsonfred}\cite{koshaktraction}. According to the afformentioned references, the apparent coefficient of friction $\mu'$ for a circular groove is written as 
+ Analyzing the equations for the stiffness of the different cable sections of a capstan drive ((24) to (28)), one can clearly see that most of the stiffness terms are proportional to the coefficient of friction. Therefore, Increasing the coefficient of friction between the cable and the pulleys is an effective way to increase the overall stiffness of the transmission. Typically, the coefficient of friction is a property that is only dependent on the nature of the materials at the friction interface. However, like for a v-belt drive, by changing the geometry of the interface between two surfaces, it is possible to change the effective coefficient of friction. The way a circular groove interacts with a cable to increase the effective coefficient of friction has been studied many times as grooves are often used in elevator mechanical design \cite{elevator_german}\cite{elevator}\cite{gibsonfred}\cite{koshaktraction}. According to the aformentioned references, the effective coefficient of friction $\mu'$ for a circular groove is written as 
  \begin{align}
 \mu' = \frac{4}{\pi}\mu, 
  \end{align}
 where $\mu$ is the static coefficient of friction between the cable and a flat surface of the same material as the groove. This means that the use of grooves theoretically increases the friction between the cable and the groove by roughly 27.3 \%.
 \par
-To prove this concept, a small experimental setup was made. The experimental setup is shown in figures \ref{fig:exp_A} and \ref{fig:exp_B}. 
+An experimental setup was built to validate this concept. The experimental setup is shown in figures \ref{fig:exp_A} and \ref{fig:exp_B}. 
 \begin{figure}
 \centering
 \includegraphics[width=0.5\columnwidth]{experimental_setup.eps}
 \caption{Explicative illustration of the experimental setup.}
 \label{fig:exp_A}
 \end{figure}
-In this setup, a pulley is connected to a motor which is controlled to spin at a constant speed. a rope is passed around the top half of the pulley with one end of the rope attached to a very heavy mass (immovable) and the other end of the rope attached to a basket. The cable slips on the pulley as the number of turns around the pulley (1/2) is insufficient to create traction. As more and more mass is added to the basket, the friction between the cable and the pulley increases. Therefore, a larger torque $\tau_m$ is required at the motor in order to maintain a constant speed. When the motor spins at constant speed, the torque required is equal to the total friction torque (if the internal friction torque of the motor is neglected). The total friction torque $\tau_f$, for this setup, is written as 
+In this setup, a pulley is connected to a motor which is controlled to spin at a constant speed. A rope is passed around the top half of the pulley with one end of the rope attached to a very heavy mass (immovable) and the other end of the rope attached to a basket. The cable slips on the pulley as the number of turns around the pulley (1/2) is insufficient to create traction. As more and more mass is added to the basket, the friction between the cable and the pulley increases. Therefore, a larger torque $\tau_m$ is required at the motor in order to maintain a constant speed. When the motor spins at constant speed, the torque required is equal to the total friction torque (if the internal friction torque of the motor is neglected). The total friction torque $\tau_f$, for this setup, is written as 
 \begin{align}
 \tau_f = r\mu\int_0^\pi dN(\theta),
 \label{int_exp}
@@ -259,17 +259,17 @@ In this setup, a pulley is connected to a motor which is controlled to spin at a
 \begin{align}
 \tau_f = r\mu\int_0^\pi dN(\theta) = r\mu T_1\int_0^\pi e^{-\mu\theta}d\theta = r\mu mg\int_0^\pi e^{-\mu\theta}d\theta = rmg\left(1-e^{\mu\pi}\right).
 \end{align}
-In order to have constant speed, one must have $\tau_f = \tau_m$ which means that $\mu$ can be calculated as a function of the mass of the basket $m$ and the motor torque $\tau_m$ with the following equation
+In order to have a constant speed, one must have $\tau_f = \tau_m$ which means that $\mu$ can be calculated as a function of the mass of the basket $m$ and the motor torque $\tau_m$ with the following equation
 \begin{align}
 \mu = \frac{1}{\pi}\ln\left({\frac{rmg}{rmg-\tau_m}}\right).
 \end{align} 
-In the experimental setup, two pulleys of radius $r=0.03$ m were tested, one with no groove and one with a groove of same radius as the cable in order to have a full half circled groove. The motor was spun at a constant speed of 100 RPM while the motor torque was recorded continously. The mass of the basket was increased incrementally from 100 g of added mass to 900 grams of added mass (the basket having a mass of 27.6 g). The average motor torque for every mass increment was also recorded. The experiment results are presented in Table 2 and in figure 4.
+In the experimental setup, two pulleys of radius $r=0.03$ m were tested, one with no groove and one with a groove of the same radius as the cable in order to have a full half circled groove. The motor was spun at a constant speed of 100 RPM while the motor torque was recorded continously. The mass of the basket was progressively increased from 100 g of added mass to 900 grams of added mass (the basket having a mass of 27.6 g). The average motor torque for every mass increment was also recorded. The experiment results are presented in Table 2 and in figure 4.
 \begin{figure}
 \centering
 \includegraphics[width=0.47\columnwidth]{fig_exp.eps}
 \qquad
 \begin{tabular}[b]{cccc}\hline
-      Mass [g] & $\mu_{k1}$:no groove & $\mu_{k2}$:simple & $\eta=\mu_{k2}/\mu_{k1}$\\ \hline
+      Mass [g] & $\mu_{1}$:no groove & $\mu_{2}$:simple & $\eta=\mu_{2}/\mu_{1}$\\ \hline
       127.6 & 0.38 & 0.62 & 1.64\\
       327.6 & 0.15 & 0.22 & 1.43\\
       527.6 & 0.12 & 0.18 & 1.50\\
@@ -283,7 +283,7 @@ In the experimental setup, two pulleys of radius $r=0.03$ m were tested, one wit
     \caption{Experimental results.}
 \end{figure}
 \par
-As can be seen in the experimental results, the increase in the coefficient of friction when passing from no groove to a simple half circle groove is even more than what the theory predicts as the average increase is of $1.51$ times the no groove coefficient of friction. This shows that the use of grooves is indeed a good way to easily increase the coefficient of friction between the cables and the pulleys and thus increase the total stiffness of a capstan drive.
+As it can be seen in the experimental results, the increase in the coefficient of friction when passing from no groove to a simple half circle groove is even more than what the theory predicts since the average increase is of $1.51$ times the no groove coefficient of friction. This shows that the use of grooves is indeed a good way to easily increase the coefficient of friction between the cables and the pulleys and thus increase the total stiffness of a capstan drive.
 \\ 
  The following section presents a novel capstan drive architecture that takes advantage of the increased effective friction coefficient of grooved pulleys and uses multiple grooves on its output pulley in order to allow different cable arrangements which further increase the stiffness of the drive.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -301,16 +301,16 @@ Figure \ref{fig:cable_arrangements} illustrates the different possible cable arr
  \begin{figure*}
     \centering
     \subfloat[One cable fixed at both ends to the output pulley.\label{fig:single_cable_multi_loops}]
-    {\includegraphics[width =0.2\columnwidth]{only_one_cable_multi_loops.eps}}\hspace{0.1\columnwidth}
-    \subfloat[Two cables both fixed at both ends to the output pulley.\label{fig:2cables_multi_loops}]{\includegraphics[width=0.2\columnwidth]{two_cables_multi_loops.eps}}
+    {\includegraphics[width =0.3\columnwidth]{only_one_cable_multi_loops.eps}}\hspace{0.1\columnwidth}
+    \subfloat[Two cables both fixed at both ends to the output pulley.\label{fig:2cables_multi_loops}]{\includegraphics[width=0.3\columnwidth]{two_cables_multi_loops.eps}}
     
-    \subfloat[Two cables with ends fixed at the input pulley and the output pulley.\label{fig:multi_cables_full_loops}]{\includegraphics[width=0.2\columnwidth]{two_cables_all_loops.eps}}\hspace{0.1\columnwidth}
-    \subfloat[Three cables, two having ends fixed at the input and output pulley and one being fixed at both ends to the output pulley.\label{fig:three_cables_multi_loops}]{\includegraphics[width=0.2\columnwidth]{three_cables_multi_loops.eps}}
+    \subfloat[Two cables with ends fixed at the input pulley and the output pulley.\label{fig:multi_cables_full_loops}]{\includegraphics[width=0.3\columnwidth]{two_cables_all_loops.eps}}\hspace{0.1\columnwidth}
+    \subfloat[Three cables, two having ends fixed at the input and output pulley and one being fixed at both ends to the output pulley.\label{fig:three_cables_multi_loops}]{\includegraphics[width=0.3\columnwidth]{three_cables_multi_loops.eps}}
     \caption{Different possible cable arrangements.}
     \label{fig:cable_arrangements}
 \end{figure*}
 In figure \ref{fig:single_cable_multi_loops}, a single cable is used which is fixed at both ends to the output pulley. This arrangement has the advantage of being simple and its stiffness model is equivalent to the stiffness model of a typical capstan drive such as the one presented in figure \ref{fig:model_capstan}. This arrangement can be used many times in parallel as shown in figure \ref{fig:2cables_multi_loops} in order to multiply the total stiffness of the transmission. However, since none of the cables are fixed to the input pulley, slipping of the input pulley is possible.\\
-The layout shown in figure \ref{fig:multi_cables_full_loops} uses two cables. Each cable is fixed to the input pulley at one end and to the output pulley at the other end. This cable arrangement has the advantage of ensuring that the input pulley does not slip. However, it requires two cables to obtain a transmission stiffness which is equivalent to the transmission stiffness of a single cable arrangement in figure \ref{fig:single_cable_multi_loops}.\\
+The layout shown in figure \ref{fig:multi_cables_full_loops} uses two cables. Each cable is fixed to the input pulley at one end and to the output pulley at the other end. This cable arrangement has the advantage of ensuring that the input pulley does not slip. However, it requires two cables to obtain a transmission stiffness which is equivalent to the transmission stiffness of the single cable arrangement of figure \ref{fig:single_cable_multi_loops}.\\
 The layout shown in figure  \ref{fig:three_cables_multi_loops} uses three cables. Two of its cables are fixed to both the input and output pulley while its third cable is strictly fixed to the output pulley but loops over the input pulley. The first two cables ensure the motion coupling of the input and output pulley (that there is no slipping) while the third cable helps to increase the transmission stiffness. This cable arrangement has the advantages of the two previous arrangements. \\
 In all the cable arrangements shown in figure \ref{fig:cable_arrangements}, the number of turns that can be made by the output pulley is given by 
 \begin{align}
@@ -331,7 +331,7 @@ In order for the cables to pass from the input pulley to the output pulley and v
  \begin{align}
      \mathbf{q}_1(t_1) = \frac{d\mathbf{p}_1(t_1)}{dt_1} = \begin{bmatrix}
      -r_1\sin t_1\\-r_1\cos t_1\\\frac{H_1}{2\pi}
-     \end{bmatrix} 
+     \end{bmatrix}. 
  \end{align}
  The unit vector $\mathbf{u}_1(t_1)$ along $\mathbf{q}_1(t_1)$ is obtained by dividing $\mathbf{q}_1(t_1)$ by its Euclidean norm which gives
  \begin{align}
@@ -451,7 +451,7 @@ with $t_1$ given by \eqref{eq:deriv_eq_tI2} and $L_f$ given by \eqref{eq:val_Lf}
 where $a//b$ returns the remainder of $a$ divided by $b$.\\
 
 Angle $\omega$ varies with the distance separating the axes of the input and output pulleys $D$. Knowing $D$, properly aligning the pulleys so that the cables follow a smooth path simply requires that both pulleys be locked during the cable mounting with the large pulley being rotated by an angle $\omega$ from the $X_1$ axis of the small pulley around the $Z_2$ axis of the large pulley. After having taught all the cables at both ends, the system can then be unlocked and the pulley grooves are properly aligned.\par
-The following sections shows that their exists a minimal distance between the two capstan drive pulleys to ensure that their is no cable interference.
+The next section shows that there exists a minimal distance between the two capstan drive pulleys to ensure that there is no cable interference.
 \section{Minimal distance between pulleys to avoid cable interference.}
 The cable arrangements in figures \ref{fig:multi_cables_full_loops}, \ref{fig:2cables_multi_loops} and \ref{fig:three_cables_multi_loops} all display the situation where cable interference between two distinct cables might be possible if the distance between the pulleys is too small. However, one can determine the minimal distance $D$ between the two capstan pulleys as a function of the cable diameter $\zeta$. Figure \ref{fig:cable_interference} shows a modified version of figure \ref{fig:multi_cables_full_loops} which includes a reference frame from which positions of interest can be established. 
 \begin{figure}
@@ -460,8 +460,8 @@ The cable arrangements in figures \ref{fig:multi_cables_full_loops}, \ref{fig:2c
 \caption{Determining the shortest cable to cable distance in a two cable arrangement.}
 \label{fig:cable_interference}
 \end{figure}
- In figure \ref{fig:cable_interference}, points $P_3$ and $P_4$ are respectively the points where the blue and the red cable leave tangeantially the small pulley of radius $r_3$.
-The position of theses points with respect to the reference frame $\mathcal{O}_3$ can be respectively written as 
+ In figure \ref{fig:cable_interference}, points $P_3$ and $P_4$ are respectively the points where the blue and the red cable tangentially leave the small pulley of radius $r_3$.
+The position of these points with respect to the reference frame $\mathcal{O}_3$ can be respectively written as 
 \begin{align}
 P_3: \mathbf{p}_3 = \begin{bmatrix}
 r_3\cos\varphi\\
@@ -476,7 +476,7 @@ r_3\cos\varphi\\
 where $H_3$ is the pitch of the input pulley helix and $\varphi$ is given by
 \begin{align}
 \varphi = \sin^{-1}\left(\frac{r_3+r_4}{D}\right)
-\end{align} where $r_3$ is the radius of the small pulley, $r_4$ is the radius of the large pulley and $D$ is the center to center distance between the two. Furthermore, the tangeant unit vectors at points $P_3$ and $P_4$ pointing in the direction leaving the small pulley can be expressed respectively as 
+\end{align} where $r_3$ is the radius of the small pulley, $r_4$ is the radius of the large pulley and $D$ is the center to center distance between the two. Furthermore, the tangent unit vectors at points $P_3$ and $P_4$ pointing in the direction leaving the small pulley can be expressed respectively as 
 \begin{align}
 \mathbf{u}_3 = \frac{\begin{bmatrix}
 -r_3\sin\varphi\\
@@ -498,23 +498,19 @@ l_A: \mathbf{p}(s_A) = \mathbf{m}_As_A+\mathbf{b}_A,\quad l_B: \mathbf{p}(s_B) =
 \end{align}
 Applying this equation to the parametric lines $l_3$ and $l_4$ gives
 \begin{align}
-d = \abs{\frac{\mathbf{u}_3\times\mathbf{u}_4}{\norm{\mathbf{u}_3\times\mathbf{u}_4}}\cdot\left(\mathbf{p}_4-\mathbf{p}_3\right)} = \abs{\frac{H_3(r_3+r_4)(3\pi-2\varphi)-2\lambda}{\gamma}},
+d = \abs{\frac{H_3r_3\left(3\pi-2\sqrt{\gamma^2-1}-2\sin^{-1}(1/\gamma)\right)}{\sqrt{H_3^2\gamma^2+4\pi^2r_3^2}}},
 \label{eq:distance_func}
 \end{align}
 where
 \begin{align}
-\lambda = \sqrt{D^2-(r_3+r_4)^2}
-\end{align}
-and
-\begin{align}
-\gamma = \sqrt{D^2H_3^2+4\pi^2r_3^2(r_3+r_4)^2}.
+\gamma = \frac{D}{r_3+r_4}.
 \end{align}
 Finally, using equation \eqref{eq:distance_func} and replacing $d$ by the diameter $\zeta$, one can write the following condition which ensures that the cables will not touch
 \begin{align}
-\abs{\frac{H_3(r_3+r_4)(3\pi-2\varphi)-2\lambda}{\gamma}} > \zeta.
+\abs{\frac{H_3r_3\left(3\pi-2\sqrt{\gamma^2-1}-2\sin^{-1}(1/\gamma)\right)}{\sqrt{H_3^2\gamma^2+4\pi^2r_3^2}}} > \zeta.
 \label{eq:ineq_dist}
 \end{align}
-Since the function in \eqref{eq:distance_func} increases with $D$ and $H_3$, there will exist a couple $D,H_3$ which will satisfy the condition in \eqref{eq:ineq_dist} meaning it is always possible to avoid cable interference.
+Finding a pair $D$ and $H_3$ such that \eqref{eq:ineq_dist} is true means that cable interference will be avoided.
 %This process is better illustrated in figure \ref{fig:process_align}.
 %\begin{figure*}
 %\centering

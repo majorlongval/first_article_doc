@@ -65,7 +65,7 @@ Gosselin, F., Ferlay, F., Bouchigny, S., M{\'e}gard, C., and Taha, F., 2011.
 Perret, J., and Vercruysse, P., 2014.
 \newblock ``Advantages of mechanical backdrivability for medical applications
   of force control''.
-\newblock In Workshop on Computer/Robot Assisted Surgery (CRAS).
+\newblock In Conference on Computer/Robot Assisted Surgery (CRAS), pp.~84--86.
 
 \bibitem{baumann1998haptic}
 Baumann, R., and Clavel, R., 1998.
@@ -78,6 +78,7 @@ Baumann, R., and Clavel, R., 1998.
 Carignan, C.~R., and Cleary, K.~R., 2000.
 \newblock ``Closed-loop force control for haptic simulation of virtual
   environments''.
+\newblock {\em Haptics-e, The electronic journal of haptics research}.
 
 \bibitem{baser2013kinematic}
 Baser, O., and Konukseven, E.~I., 2013.
@@ -90,7 +91,8 @@ Baser, O., and Konukseven, E.~I., 2013.
 Townsend, W.~T., 1988.
 \newblock ``The effect of transmission design on force-controlled manipulator
   performance''.
-\newblock PhD thesis.
+\newblock PhD thesis, Department of Mechanical Engineering, Massachusetts
+  Institute of Technology.
 
 \bibitem{rooks2006harmonious}
 Rooks, B., 2006.
@@ -168,11 +170,13 @@ Werkmeister, J., and Slocum, A., 2007.
 \newblock {\em precision Engineering, {\bf 31}}(1), pp.~55--67.
 
 \bibitem{gibsonfred}
-Gibson, G.~W.
+Gibson, G.~W., 2017.
 \newblock ``Fred hymans and the theory of rope traction, part two''.
+\newblock {\em Elevator World}, Mar, p.~122–136.
 
 \bibitem{koshaktraction}
-Koshak, J.~W.
+Koshak, J.~W., 2017.
 \newblock ``Traction for field personnel, part one''.
+\newblock {\em Elevator World}, Aug, p.~77–86.
 
 \end{thebibliography}

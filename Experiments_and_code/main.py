@@ -34,27 +34,18 @@ fig, ax1 = plt.subplots()
 
 color = 'black'
 ax1.set_xlabel('mass [kg]')
-ax1.set_ylabel('$\mu_k$', color = color)
-plt1 = ax1.plot(data['mass'], mu_no_groove, color =color)
-plt2 = ax1.plot(data['mass'], mu_simple_groove, color=color, linestyle='--')
+ax1.set_ylabel('$\mu$', color = color)
+plt1 = ax1.plot(data['mass'], mu_no_groove, color =color, marker='.')
+plt2 = ax1.plot(data['mass'], mu_simple_groove, color=color, linestyle='--', marker='.')
 
 ax2 = ax1.twinx()
 
 color = 'blue'
 ax2.set_ylabel('$\eta$', color=color)  # we already handled the x-label with ax1
-plt3 = ax2.plot(data['mass'], lambda_simple, color=color)
+plt3 = ax2.plot(data['mass'], lambda_simple, color=color, marker='.')
 ax2.tick_params(axis='y', labelcolor=color)
 fig.tight_layout()
 plt.grid(True)
 all_plt = plt1+plt2+plt3
-ax1.legend(all_plt,['$\mu_{k1}$:no groove', '$\mu_{k2}$:simple groove', '$\eta = \mu_{k2}/\mu_{k1}$'])
+ax1.legend(all_plt,['$\mu_{1}$:no groove', '$\mu_{2}$:simple groove', '$\eta = \mu_{2}/\mu_{1}$'])
 plt.show()
-# plt.plot(data['mass'],data['simple_groove'])
-# plt.plot(data['mass'],data['complexe_groove'])
-# plt.plot(data['mass'],data['big_groove'])
-# plt.grid(True)
-# plt.xlabel('mass (g)')
-# plt.ylabel('Torque (Nm)')
-# plt.legend(['no groove', 'simple groove','complex groove',
-# 'big groove'])
-# plt.show()

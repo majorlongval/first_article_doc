@@ -3,51 +3,44 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: new_article_latex.aux
 The style file: asmems4.bst
 Database file #1: ./bibliography/asme2e.bib
-Warning--empty journal in carignan2000closed
-Warning--empty school in townsend1988effect
-Warning--empty year in gibsonfred
-Warning--empty journal in gibsonfred
-Warning--empty year in koshaktraction
-Warning--empty journal in koshaktraction
 You've used 28 entries,
             1984 wiz_defined-function locations,
-            644 strings with 9028 characters,
-and the built_in function-call counts, 8264 in all, are:
-= -- 783
+            652 strings with 9153 characters,
+and the built_in function-call counts, 8818 in all, are:
+= -- 859
 > -- 292
 < -- 0
 + -- 116
 - -- 88
-* -- 517
-:= -- 1123
-add.period$ -- 82
+* -- 537
+:= -- 1167
+add.period$ -- 85
 call.type$ -- 28
 change.case$ -- 26
 chr.to.int$ -- 0
-cite$ -- 34
-duplicate$ -- 441
-empty$ -- 777
+cite$ -- 28
+duplicate$ -- 482
+empty$ -- 821
 format.name$ -- 88
-if$ -- 1963
+if$ -- 2128
 int.to.chr$ -- 0
 int.to.str$ -- 28
 missing$ -- 28
-newline$ -- 141
+newline$ -- 144
 num.names$ -- 28
-pop$ -- 131
+pop$ -- 126
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 313
+skip$ -- 374
 stack$ -- 0
-substring$ -- 599
-swap$ -- 214
+substring$ -- 655
+swap$ -- 255
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 6
-while$ -- 82
+warning$ -- 0
+while$ -- 87
 width$ -- 30
-write$ -- 305
-(There were 6 warnings)
+write$ -- 317
